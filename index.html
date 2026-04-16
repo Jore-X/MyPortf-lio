@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfólio Dev</title>
+  </head>
+  <body>
+    <header>
+      <nav class="radioInputs">
+        <label for="homeRadio" class="radio">
+          <input
+            type="radio"
+            name="navBar"
+            id="homeRadio"
+            value="home"
+            onclick="trocar(this.value)"
+            checked
+          />
+          <span class="name">Inicio</span>
+        </label>
+        <label for="aboutRadio" class="radio"
+          ><input
+            type="radio"
+            name="navBar"
+            id="aboutRadio"
+            value="about"
+            onclick="trocar(this.value)"
+          />
+          <span class="name">Sobre</span>
+        </label>
+        <label for="projectsRadio" class="radio"
+          ><input
+            type="radio"
+            name="navBar"
+            id="projectsRadio"
+            value="projects"
+            onclick="trocar(this.value)"
+          />
+          <span class="name">Projetos</span>
+        </label>
+        <label for="contactRadio" class="radio"
+          ><input
+            type="radio"
+            name="navBar"
+            id="contactRadio"
+            value="contact"
+            onclick="trocar(this.value)"
+          />
+          <span class="name">Contato</span>
+        </label>
+
+        <!-- <ul>
+          <li><a class="title-bold" href="#">Inicio</a></li>
+          <li><a class="title-bold" href="#">Sobre</a></li>
+          <li><a class="title-bold" href="#">Projetos</a></li>
+          <li><a class="title-bold" href="#">Contato</a></li>
+        </ul> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="sections">
+        <div id="divHome">
+          <img
+            id="fotoDev"
+            src="./assets/img/Eu bolha.png"
+            alt="Foto do Desenvolvedor"
+          />
+          <div id="textHome">
+            <h1 class="title-bold">
+              Desenvolvedor <span id="titleSpan">Front-End</span>
+            </h1>
+            <p>
+              Transformo ideias em páginas rápidas e funcionais. HTML, CSS e
+              JavaScript.
+            </p>
+          </div>
+        </div>
+
+        <img
+          id="arrowDown"
+          src="./assets/img/Arrow Down.png"
+          alt="Arrow Down"
+        />
+      </section>
+      <section id="about" class="sections">
+        <h1>Pagina SOBRE</h1>
+      </section>
+      <section id="projects" class="sections">
+        <div class="boxCards">
+          <div class="cardsRight">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/DevLogin/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/DevLogin/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Página de Login
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+          <div class="cardsRight">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/Hollow/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/Hollow/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Wiki Hollow Knight
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+        </div>
+        <div class="boxCards">
+          <div class="cardsCenter">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/Landing-Page-Meias-Patinhas/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/Landing-Page-Meias-Patinhas/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Meias Patinhas
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+          <div class="cardsCenter">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/Autorizada-1.0/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/Autorizada-1.0/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Autorizada 1.0
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+        </div>
+        <h1 id="h1Projects">PROJETOS</h1>
+        <div class="boxCards">
+          <div class="cardsLeft">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/CompraMestre/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/CompraMestre/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Lista de Compras
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+          <div class="cardsLeft">
+            <a
+              class="linkCards"
+              href="https://jore-x.github.io/Calculador_de_Juros/"
+              target="_blank"
+            ></a>
+            <iframe
+              class="scaledIframe"
+              src="https://jore-x.github.io/Calculador_de_Juros/"
+              frameborder="0"
+            ></iframe>
+            <h3>
+              Cálculo de Juros
+              <img
+                class="externalLink"
+                src="./assets/img/icons8-link-externo-64.png"
+                alt=""
+              />
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="sections">
+        <h1>Pagina de contato</h1>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
