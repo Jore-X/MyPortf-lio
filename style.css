@@ -232,7 +232,7 @@ main {
     flex-wrap: wrap;
   }
 
-  .radioInputs{
+  .radioInputs {
     gap: 10px;
   }
   #divHome {
@@ -313,7 +313,9 @@ main {
   background: radial-gradient(ellipse at bottom, #130730 0%, #090a0f 100%);
   overflow: hidden;
 }
-
+/* _________________________________________________________________________ */
+/* _________________________________________________________________________ */
+/* From Uiverse.io by sinful_9361 */
 #stars {
   width: 1px;
   height: 1px;
@@ -2364,7 +2366,6 @@ main {
     1543px 1757px #fff,
     287px 1272px #fff;
 }
-
 
 @keyframes animStar {
   from {
