@@ -219,7 +219,7 @@ main {
 }
 #h1Projects {
   position: absolute;
-  top: 5rem;
+  top: 9vh;
   padding: 1rem;
   border-radius: 15px;
   border: 2px solid white;
@@ -306,7 +306,7 @@ main {
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
 .container {
-  position: absolute;
+  position: fixed;
   z-index: -10;
   height: 100%;
   width: 100%;
