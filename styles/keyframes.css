@@ -93,3 +93,12 @@
     scale: 1;
   }
 }
+
+@keyframes easeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

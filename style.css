@@ -1,9 +1,9 @@
 @import url(./styles/backgroundStars.css);
 @import url(./styles/header.css);
 @import url(./styles/home.css);
-@import url(./styles/projects.css);
 @import url(./styles/about.css);
-@import url(./styles/mobile.css);
+@import url(./styles/projects.css);
+@import url(./styles/contact.css);
 @import url(./styles/keyframes.css);
 
 * {
@@ -15,18 +15,18 @@
 :root {
   --cor_teste_1: rgb(255, 255, 255, 0.5);
   --cor_teste_2: rgb(255, 255, 0, 0.5);
+  --gapCards: 100px;
 }
 
 /* _________________________________________________________________________ */
 html {
   scroll-behavior: smooth;
 }
-/* _________________________________________________________________________ */
-
+/* _____________________________________ */
 .sections {
   display: flex;
   overflow: clip;
-  min-height: calc(100vh - 44px);
+  min-height: 100vh;
   width: 100%;
   height: 100%;
   padding: 2rem;
@@ -35,4 +35,80 @@ html {
 
   justify-content: center;
   align-items: center;
+}
+
+/* _______________________________________________________________________________ */
+/* _______________________________________________________________________________ */
+/* MOBILE PART */
+/* _______________________________________________________________________________ */
+/* _______________________________________________________________________________ */
+
+@media (max-width: 768px) {
+  .sections {
+    flex-wrap: wrap;
+  }
+
+  .radioInputs {
+    gap: 10px;
+  }
+  #divHome {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  #fotoDev {
+    width: 60%;
+  }
+  #projects {
+    padding-top: 15rem;
+  }
+  /* _________________________________________________________________________ */
+  /* _________________________________________________________________________ */
+  #about {
+    scroll-margin-top: -75px;
+  }
+  /* _________________________________________________________________________ */
+  /* _________________________________________________________________________ */
+  .boxCards {
+    flex-direction: column;
+  }
+
+  .cardsL,
+  .cardsR {
+    padding: 0;
+    gap: var(--gapCards);
+  }
+  .cardsR {
+    margin-top: var(--gapCards);
+  }
+
+  .cL,
+  .cR {
+    animation: appearUp 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    view-timeline-inset: 20%;
+  }
+
+  #navBarLinks {
+    width: 90%;
+    font-size: 1rem;
+  }
+  #navBarLinks ul {
+    padding: 0.5rem 5% 0rem 5%;
+    gap: 1vw;
+  }
+  .navLinks i {
+    display: block;
+  }
+
+  .navLinks span,
+  .navLinks.active i {
+    display: none;
+  }
+  .navLinks.active span {
+    display: block;
+  }
 }

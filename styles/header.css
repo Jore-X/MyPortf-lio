@@ -5,52 +5,26 @@ header {
   display: flex;
   justify-content: center;
 }
-.radioInputs {
+/* __________________________________________________ */
+/* __________________________________________________ */
+#navBarLinks > ul {
+  display: flex;
   overflow: hidden;
-  padding: 0.5rem 2rem 0rem 3rem;
+  padding: 0.5rem 2rem 0rem 2rem;
   border-radius: 0 0 30px 30px;
   background: #004aad;
   /* box-shadow: 0 0 30px #fafafa; */
-  display: flex;
   gap: 20px;
-  list-style: none;
   justify-content: space-evenly;
   align-items: center;
 }
-.radio > input {
+#navBarLinks li {
+  list-style: none;
+}
+.navLinks i {
   display: none;
 }
-.radio > input:checked + .name {
-  background: black;
-  font-weight: 600;
-}
-.radio > input + .name:hover {
-  color: #fff;
-}
-.radio > input:checked + .name:hover {
-  color: #e8e8e8;
-}
-.radio > input:checked + .name::after,
-.radio > input:checked + .name::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #004aad;
-  bottom: 0;
-}
-.radio > input:checked + .name::after {
-  right: -10px;
-  border-bottom-left-radius: 300px;
-  box-shadow: -5px 5px 0px 5px black;
-}
-.radio > input:checked + .name::before {
-  left: -10px;
-  border-bottom-right-radius: 300px;
-  box-shadow: 5px 5px 0px 5px black;
-}
-
-.name {
+.navLinks a {
   font-weight: bold;
   color: #b3bbea;
   text-decoration: none;
@@ -63,4 +37,37 @@ header {
   padding: 0.5rem 1rem;
   transition: all 0.15s ease-in-out;
   position: relative;
+}
+
+.navLinks a:hover {
+  color: #fff;
+}
+.navLinks.active a {
+  background: black;
+  font-weight: 600;
+}
+
+.navLinks.active a:hover {
+  color: #e8e8e8;
+}
+
+.navLinks.active a::after,
+.navLinks.active a::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #004aad;
+  bottom: 0;
+  animation: easeIn 0.15s ease-in;
+}
+.navLinks.active a::after {
+  right: -10px;
+  border-bottom-left-radius: 300px;
+  box-shadow: -5px 5px 0px 5px black;
+}
+.navLinks.active a::before {
+  left: -10px;
+  border-bottom-right-radius: 300px;
+  box-shadow: 5px 5px 0px 5px black;
 }

@@ -1,0 +1,9 @@
+#contact {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.lorem {
+    width: 70%;
+    text-align: center;
+}

@@ -10,53 +10,45 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfólio Dev</title>
   </head>
   <body>
     <header>
-      <nav class="radioInputs">
-        <label for="homeRadio" class="radio">
-          <input
-            type="radio"
-            name="navBar"
-            id="homeRadio"
-            value="home"
-            onclick="trocar(this.value)"
-            checked
-          />
-          <span class="name">Inicio</span>
-        </label>
-        <label for="aboutRadio" class="radio"
-          ><input
-            type="radio"
-            name="navBar"
-            id="aboutRadio"
-            value="about"
-            onclick="trocar(this.value)"
-          />
-          <span class="name">Sobre</span>
-        </label>
-        <label for="projectsRadio" class="radio"
-          ><input
-            type="radio"
-            name="navBar"
-            id="projectsRadio"
-            value="projects"
-            onclick="trocar(this.value)"
-          />
-          <span class="name">Projetos</span>
-        </label>
-        <label for="contactRadio" class="radio"
-          ><input
-            type="radio"
-            name="navBar"
-            id="contactRadio"
-            value="contact"
-            onclick="trocar(this.value)"
-          />
-          <span class="name">Contato</span>
-        </label>
+      <nav id="navBarLinks">
+        <ul>
+          <li class="navLinks active">
+            <a href="#home"
+              ><i class="fa-regular fa-house"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#about"
+              ><i class="fa-solid fa-circle-info"></i>
+              <span>Sobre</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#projects"
+              ><i class="fa-regular fa-folder-open"></i>
+              <span>Projetos</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#contact">
+              <i class="fa-regular fa-address-card"></i>
+              <span>Contato</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -98,139 +90,28 @@
       </section>
       <section id="about" class="sections">
         <h1>Pagina SOBRE</h1>
-        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
-        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
-        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
       </section>
       <section id="projects" class="sections">
         <h1 id="h1Projects">PROJETOS</h1>
-        <!-- <div class="boxCards">
-          <div class="cardsRight">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/DevLogin/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_DevLogin_.png"
-              alt=""
-            />
-            <h3>
-              Página de Login
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-          <div class="cardsRight">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/Hollow/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_Hollow_.png"
-              alt=""
-            />
-            <h3>
-              Wiki Hollow Knight
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-        </div>
         <div class="boxCards">
-          <div class="cardsCenter">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/Landing-Page-Meias-Patinhas/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_Landing-Page-Meias-Patinhas_.png"
-              alt=""
-            />
-            <h3>
-              Meias Patinhas
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-          <div class="cardsCenter">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/Autorizada-1.0/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_Autorizada-1.0_.png"
-              alt=""
-            />
-            <h3>
-              Autorizada 1.0
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-        </div>
-        <div class="boxCards">
-          <div class="cardsLeft">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/CompraMestre/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_CompraMestre_.png"
-              alt=""
-            />
-            <h3>
-              Lista de Compras
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-          <div class="cardsLeft">
-            <a
-              class="linkCards"
-              href="https://jore-x.github.io/Calculador_de_Juros/"
-              target="_blank"
-            ></a>
-            <img
-              class="scaledIframe"
-              src="./assets/img/Imagem Projetos/jore-x.github.io_Calculador_de_Juros_.png"
-              alt=""
-            />
-            <h3>
-              Cálculo de Juros
-              <img
-                class="externalLink"
-                src="./assets/img/icons8-link-externo-64.png"
-                alt=""
-              />
-            </h3>
-          </div>
-        </div> -->
-        <div class="boxCards2">
           <div class="cardsL">
             <div class="cards cL">
               <a
@@ -359,9 +240,28 @@
       </section>
       <section id="contact" class="sections">
         <h1>Pagina de contato</h1>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
+          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
+          perspiciatis recusandae est laborum dolores?
+        </p>
       </section>
     </main>
   </body>
   <script src="./script.js"></script>
-  <script src="./reveal.js" defer></script>
+  <script src="./scripts/toggleNav.js"></script>
+  <script src="./scripts/reveal.js" defer></script>
 </html>
