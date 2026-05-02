@@ -1,0 +1,44 @@
+#textHome,
+#fotoDev {
+  visibility: hidden;
+}
+/* _________________________________________________________________________ */
+#home {
+  flex-direction: column;
+  gap: 20px;
+  color: #fafafa;
+}
+#divHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fafafa;
+}
+#textHome {
+  /* background: white; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+#fotoDev {
+  width: 300px;
+  filter: drop-shadow(0 0 10px rgba(245, 245, 245, 0.5));
+}
+#titleSpan {
+  color: #5e17eb;
+}
+#arrowDown {
+  width: 50px;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: tobottom 1s alternate infinite;
+}
+.title-home {
+  font-weight: bold;
+}

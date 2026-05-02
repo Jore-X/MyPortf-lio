@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfólio Dev</title>
   </head>
   <body>
@@ -59,6 +60,7 @@
       </nav>
     </header>
     <main>
+      <img id="arrowDown" src="./assets/img/Arrow Down.png" alt="Arrow Down" />
       <!-- ______________________________________________________ -->
       <!-- ______________________________________________________ -->
       <!-- From Uiverse.io by sinful_9361 -->
@@ -78,7 +80,7 @@
             alt="Foto do Desenvolvedor"
           />
           <div id="textHome">
-            <h1 class="title-bold">
+            <h1 class="title-home">
               Desenvolvedor <span id="titleSpan">Front-End</span>
             </h1>
             <p>
@@ -96,9 +98,13 @@
       </section>
       <section id="about" class="sections">
         <h1>Pagina SOBRE</h1>
+        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
+        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
+        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro quod ratione soluta assumenda incidunt maiores eos, quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus perspiciatis recusandae est laborum dolores?</p>
       </section>
       <section id="projects" class="sections">
-        <div class="boxCards">
+        <h1 id="h1Projects">PROJETOS</h1>
+        <!-- <div class="boxCards">
           <div class="cardsRight">
             <a
               class="linkCards"
@@ -182,7 +188,6 @@
             </h3>
           </div>
         </div>
-        <h1 id="h1Projects">PROJETOS</h1>
         <div class="boxCards">
           <div class="cardsLeft">
             <a
@@ -224,6 +229,132 @@
               />
             </h3>
           </div>
+        </div> -->
+        <div class="boxCards2">
+          <div class="cardsL">
+            <div class="cards cL">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/DevLogin/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_DevLogin_.png"
+                alt=""
+              />
+              <h3>
+                Página de Login
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+            <div class="cards cL">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/Hollow/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_Hollow_.png"
+                alt=""
+              />
+              <h3>
+                Wiki Hollow Knight
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+            <div class="cards cL">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/Landing-Page-Meias-Patinhas/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_Landing-Page-Meias-Patinhas_.png"
+                alt=""
+              />
+              <h3>
+                Meias Patinhas
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+          </div>
+          <div class="cardsR">
+            <div class="cards cR">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/Autorizada-1.0/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_Autorizada-1.0_.png"
+                alt=""
+              />
+              <h3>
+                Autorizada 1.0
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+            <div class="cards cR">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/CompraMestre/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_CompraMestre_.png"
+                alt=""
+              />
+              <h3>
+                Lista de Compras
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+            <div class="cards cR">
+              <a
+                class="linkCards"
+                href="https://jore-x.github.io/Calculador_de_Juros/"
+                target="_blank"
+              ></a>
+              <img
+                class="scaledIframe"
+                src="./assets/img/Imagem Projetos/jore-x.github.io_Calculador_de_Juros_.png"
+                alt=""
+              />
+              <h3>
+                Cálculo de Juros
+                <img
+                  class="externalLink"
+                  src="./assets/img/icons8-link-externo-64.png"
+                  alt=""
+                />
+              </h3>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact" class="sections">
@@ -232,4 +363,5 @@
     </main>
   </body>
   <script src="./script.js"></script>
+  <script src="./reveal.js" defer></script>
 </html>
