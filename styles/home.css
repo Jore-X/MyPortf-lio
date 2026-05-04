@@ -31,14 +31,6 @@
 #titleSpan {
   color: #5e17eb;
 }
-#arrowDown {
-  width: 50px;
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: tobottom 1s alternate infinite;
-}
 .title-home {
   font-weight: bold;
 }

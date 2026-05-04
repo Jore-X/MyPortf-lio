@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-#stars {
+#starsBg {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -716,7 +716,7 @@
     1954px 838px #fff;
   animation: animStar 50s linear infinite;
 }
-#stars:after {
+#starsBg:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -1426,7 +1426,7 @@
     1954px 838px #fff;
 }
 
-#stars2 {
+#starsBg2 {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -1633,7 +1633,7 @@
     314px 739px #fff;
   animation: animStar 100s linear infinite;
 }
-#stars2:after {
+#starsBg2:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -1843,7 +1843,7 @@
     314px 739px #fff;
 }
 
-#stars3 {
+#starsBg3 {
   width: 3px;
   height: 3px;
   background: transparent;
@@ -1950,7 +1950,7 @@
     287px 1272px #fff;
   animation: animStar 150s linear infinite;
 }
-#stars3:after {
+#starsBg3:after {
   content: " ";
   position: absolute;
   top: 2000px;

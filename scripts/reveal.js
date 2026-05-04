@@ -38,13 +38,13 @@ sr.reveal("#fotoDev", {
     bottom: 300,
   },
 });
-sr.reveal("#textHome", {
+sr.reveal("#textHome > h1", {
   origin: "right",
   duration: 1000,
   distance: "20%",
   delay: 500,
   viewOffset: {
-    top: 300,
+    top: 200,
     bottom: 100,
   },
 });
@@ -52,9 +52,19 @@ sr.reveal("#textHome > p", {
   origin: "right",
   duration: 1000,
   distance: "20%",
-  delay: 500,
+  delay: 750,
   viewOffset: {
-    top: 300,
+    top: 200,
+    bottom: 100,
+  },
+});
+sr.reveal("#textHome > div", {
+  origin: "right",
+  duration: 1000,
+  distance: "20%",
+  delay: 1000,
+  viewOffset: {
+    top: 200,
     bottom: 100,
   },
 });

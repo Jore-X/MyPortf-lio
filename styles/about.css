@@ -1,4 +1,5 @@
 #about {
+    display: none;
     flex-direction: column;
     gap: 20px;
 }

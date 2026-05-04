@@ -1,4 +1,5 @@
 @import url(./styles/backgroundStars.css);
+@import url(./styles/buttonStars.css);
 @import url(./styles/header.css);
 @import url(./styles/home.css);
 @import url(./styles/about.css);
@@ -22,6 +23,11 @@
 html {
   scroll-behavior: smooth;
 }
+svg {
+  color: #29076d9a;
+  margin-bottom: -4.3px;
+}
+
 /* _____________________________________ */
 .sections {
   display: flex;
@@ -36,7 +42,28 @@ html {
   justify-content: center;
   align-items: center;
 }
+.html-ico,
+.css-ico,
+.js-ico {
+  font-size: 1.5rem;
+}
+.html-ico {
+  color: #e34f26;
+}
+.css-ico {
+  color: #1572b6;
+}
+.js-ico {
+  color: #f7df1e;
+}
 
+#arrowDown {
+  width: 50px;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  animation: tobottom 1s alternate infinite;
+}
 /* _______________________________________________________________________________ */
 /* _______________________________________________________________________________ */
 /* MOBILE PART */
@@ -52,11 +79,13 @@ html {
     gap: 10px;
   }
   #divHome {
-    margin-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     justify-content: center;
+  }
+  #textHome {
+    align-items: center;
   }
   #fotoDev {
     width: 60%;

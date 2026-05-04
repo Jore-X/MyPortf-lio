@@ -1,9 +1,9 @@
 @keyframes tobottom {
   0% {
-    transform: translateY(0px);
+    transform: translate( -50%, 0px);
   }
   100% {
-    transform: translateY(30px);
+    transform: translate(-50%, 30px);
   }
 }
 @keyframes fadeIn {
