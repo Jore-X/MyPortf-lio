@@ -1,0 +1,73 @@
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* __________________________________________________ */
+/* __________________________________________________ */
+#navBarLinks > ul {
+  display: flex;
+  overflow: hidden;
+  padding: 0.5rem 2rem 0rem 2rem;
+  border-radius: 0 0 30px 30px;
+  background: #004aad;
+  /* box-shadow: 0 0 30px #fafafa; */
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navBarLinks li {
+  list-style: none;
+}
+.navLinks i {
+  display: none;
+}
+.navLinks a {
+  font-weight: bold;
+  color: #b3bbea;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+}
+
+.navLinks a:hover {
+  color: #fff;
+}
+.navLinks.active a {
+  background: black;
+  font-weight: 600;
+}
+
+.navLinks.active a:hover {
+  color: #e8e8e8;
+}
+
+.navLinks.active a::after,
+.navLinks.active a::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #004aad;
+  bottom: 0;
+  animation: easeIn 0.15s ease-in;
+}
+.navLinks.active a::after {
+  right: -10px;
+  border-bottom-left-radius: 300px;
+  box-shadow: -5px 5px 0px 5px black;
+}
+.navLinks.active a::before {
+  left: -10px;
+  border-bottom-right-radius: 300px;
+  box-shadow: 5px 5px 0px 5px black;
+}

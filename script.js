@@ -1,10 +1,5 @@
-function trocar(id) {
-  document.querySelectorAll(".sections").forEach((secoes) => {
-    secoes.style.display = "none";
-  });
-  document.getElementById(id).style.display = "flex";
-}
+// const abountBtn = document.getElementById("aboutBtn");
+// const sections = document.querySelectorAll(".sections");
 
-window.onload = () => {
-    trocar('home');
-};
+// abountBtn.addEventListener("click", function () {
+// });
