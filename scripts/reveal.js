@@ -68,3 +68,13 @@ sr.reveal("#textHome > div", {
     bottom: 100,
   },
 });
+sr.reveal("#textHome > .social-media-buttons", {
+  origin: "right",
+  duration: 1000,
+  distance: "20%",
+  delay: 1000,
+  viewOffset: {
+    top: 200,
+    bottom: 100,
+  },
+});

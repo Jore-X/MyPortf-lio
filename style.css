@@ -18,7 +18,12 @@
   --cor_teste_2: rgb(255, 255, 0, 0.5);
   --gapCards: 100px;
 }
-
+/* _________________________________________________________________________ */
+/* _________________________________________________________________________ */
+.aboutBtn {
+  display: none;
+}
+/* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
 html {
   scroll-behavior: smooth;
@@ -55,6 +60,39 @@ svg {
 }
 .js-ico {
   color: #f7df1e;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  backdrop-filter: blur(10px);
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 12px 4px rgba(200, 200, 200, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0 0 12px 8px rgba(200, 200, 200, 0.1);
+}
+.fa-whatsapp {
+  color: #25D366;
+}
+.fa-instagram {
+  color: #C13584;
+}
+.fa-linkedin-in {
+  color: #0e76a8;
 }
 
 #arrowDown {
