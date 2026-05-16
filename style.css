@@ -73,7 +73,7 @@ svg {
   justify-content: center;
   width: 45px;
   height: 40px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   font-size: 1.25rem;
   border-radius: 10px;
   text-decoration: none;
@@ -85,6 +85,7 @@ svg {
 .social-media-buttons a:hover {
   box-shadow: 0 0 12px 8px rgba(200, 200, 200, 0.1);
 }
+
 .fa-whatsapp {
   color: #25d366;
 }
@@ -118,6 +119,10 @@ svg {
 @media (max-width: 768px) {
   .sections {
     flex-wrap: wrap;
+  }
+
+  #arrowDown {
+    bottom: 70px;
   }
 
   .radioInputs {
