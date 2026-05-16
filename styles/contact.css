@@ -1,9 +1,55 @@
 #contact {
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 30px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 6rem 2rem;
 }
-.lorem {
-    width: 70%;
-    text-align: center;
+.title-contact {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.form-contact {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.form-camp {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.form-camp:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 10px rgba(80, 70, 230, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-btn {
+  color: #e2e8f0;
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.form-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(80, 70, 230, 0.4);
 }
