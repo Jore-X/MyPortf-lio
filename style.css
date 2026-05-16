@@ -86,15 +86,22 @@ svg {
   box-shadow: 0 0 12px 8px rgba(200, 200, 200, 0.1);
 }
 .fa-whatsapp {
-  color: #25D366;
+  color: #25d366;
 }
 .fa-instagram {
-  color: #C13584;
+  color: #ee2a7b;
+}
+.fa-github {
+  color: #fff;
 }
 .fa-linkedin-in {
   color: #0e76a8;
 }
-
+#arrowBox {
+  animation: disappearScroll linear;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+}
 #arrowDown {
   width: 50px;
   position: fixed;

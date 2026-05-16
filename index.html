@@ -52,7 +52,13 @@
       </nav>
     </header>
     <main>
-      <img id="arrowDown" src="./assets/img/Arrow Down.png" alt="Arrow Down" />
+      <div id="arrowBox">
+        <img
+          id="arrowDown"
+          src="./assets/img/Arrow Down.png"
+          alt="Arrow Down"
+        />
+      </div>
       <!-- ______________________________________________________ -->
       <!-- ______________________________________________________ -->
       <!-- From Uiverse.io by sinful_9361 -->
@@ -98,14 +104,15 @@
               </button>
             </div>
             <div class="social-media-buttons">
-              <a href="https://wa.me/38998439625">
+              <a href="https://wa.me/38998439625" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="https://www.instagram.com/jorecode/">
-                <i class="fa-brands fa-instagram"></i>
+              <a href="https://github.com/Jore-X" target="_blank">
+                <i class="fa-brands fa-github"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/dheymerson-nascimento-53b35031a/"
+                target="_blank"
               >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
@@ -296,29 +303,43 @@
         </svg>
       </div>
       <section id="contact" class="sections">
-        <h1>Pagina de contato</h1>
-        <p class="lorem">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
-          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
-          perspiciatis recusandae est laborum dolores?
-        </p>
-        <p class="lorem">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
-          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
-          perspiciatis recusandae est laborum dolores?
-        </p>
-        <p class="lorem">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          consectetur porro quod ratione soluta assumenda incidunt maiores eos,
-          quas voluptatibus perspiciatis reprehenderit expedita eius? Doloribus
-          perspiciatis recusandae est laborum dolores?
-        </p>
+        <h2 class="title-contact">Entre em Contato</h2>
+        <form class="form-contact" id="form" onsubmit="sendWhats(event)">
+          <div class="form-group">
+            <input placeholder="Nome" class="form-camp" id="name" />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-camp"
+              placeholder="Digite sua Mensagem"
+              id="messsage"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form-btn">Enviar WhatsApp</button>
+        </form>
+        <div class="social-media-buttons">
+          <a href="https://wa.me/38998439625" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/jorecode/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Jore-X" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dheymerson-nascimento-53b35031a/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
       </section>
     </main>
   </body>
   <script src="./script.js"></script>
   <script src="./scripts/toggleNav.js"></script>
+  <script src="./scripts/form_contact.js"></script>
   <script src="./scripts/reveal.js" defer></script>
 </html>
