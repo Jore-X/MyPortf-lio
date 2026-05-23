@@ -1,4 +1,4 @@
-.aboutBtn {
+.btnStars {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,23 +67,23 @@ strong {
   background: rgba(94, 23, 235, 0.5);
 }
 
-.aboutBtn:hover #container-starsBtn {
+.btnStars:hover #container-starsBtn {
   z-index: 1;
   background-color: #212121;
 }
 
-.aboutBtn:hover {
+.btnStars:hover {
   transform: scale(1.1);
 }
 
-.aboutBtn:active {
+.btnStars:active {
   border: double 4px #fe53bb;
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
 }
 
-.aboutBtn:active .circleBtn {
+.btnStars:active .circleBtn {
   background: #fe53bb;
 }
 
