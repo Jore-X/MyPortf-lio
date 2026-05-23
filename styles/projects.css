@@ -39,6 +39,9 @@
   overflow: hidden;
   border: 3px solid rgba(89, 0, 255, 0.5);
 }
+.cards h3{
+  text-align: center;
+}
 .cardsL,
 .cardsR {
   /* background: var(--cor_teste_2); */
