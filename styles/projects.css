@@ -41,10 +41,9 @@
   /* perspective: 1000px; */
   /* background: var(--cor_teste_1); */
 }
-.cards {
+/* .cards {
   background: white;
   position: relative;
-  /* visibility: hidden; */
 
   aspect-ratio: 16 / 9;
   max-width: 400px;
@@ -53,24 +52,32 @@
   border-radius: 30px;
   overflow: hidden;
   border: 3px solid rgba(89, 0, 255, 0.5);
-}
-.cards h3{
-  text-align: center;
-}
-.cardsL,
-.cardsR {
-  /* background: var(--cor_teste_2); */
+} */
+
+.projects-divs {
+  padding: 1rem;
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+  /* border: 3px solid rgba(89, 0, 255, 0.5); */
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 250px 8% 50px 8%;
-  gap: 200px;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.25));
 }
-.cardsL h3,
-.cardsR h3 {
+
+.cards {
+  position: relative;
+
+  aspect-ratio: 16 / 9;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+}
+.cards h3 {
+  text-align: center;
   position: absolute;
   z-index: 5;
   bottom: 0;
@@ -85,15 +92,32 @@
   border: 2px solid rgba(89, 0, 255, 0.3);
   border-bottom: none;
 }
+
+.info-cards {
+  text-align: center;
+  width: 80%;
+}
+.cardsL,
+.cardsR {
+  /* background: var(--cor_teste_2); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 250px 8% 50px 8%;
+  gap: 200px;
+}
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
 
- .imgCards {
+.imgCards {
   z-index: -1;
   width: 100%;
   object-fit: cover;
   object-position: center;
- }
+}
 .linkCards {
   position: absolute;
   z-index: 10;
@@ -102,9 +126,6 @@
   width: 100%;
   height: 100%;
   background: transparent;
-}
-.externalLink {
-  width: 1.5rem;
 }
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
@@ -119,4 +140,39 @@
   animation-timeline: view();
   animation-range: cover 0% cover 50%;
   view-timeline-inset: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    padding-top: 15rem;
+  }
+  /* _________________________________________________________________________ */
+  /* _________________________________________________________________________ */
+  .boxCards {
+    grid-template-columns: 1fr;
+    gap: var(--gapCards);
+    padding: 1rem;
+  }
+
+  .projects-divs,
+  .cards {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  /* .cardsL,
+  .cardsR {
+    padding: 0;
+    gap: var(--gapCards);
+  } */
+  /* .cardsR {
+    margin-top: var(--gapCards);
+  } */
+
+  .cL,
+  .cR {
+    animation: appearUp 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    view-timeline-inset: 20%;
+  }
 }

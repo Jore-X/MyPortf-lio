@@ -155,9 +155,6 @@ svg {
   #fotoDev {
     width: 60%;
   }
-  #projects {
-    padding-top: 15rem;
-  }
   /* _________________________________________________________________________ */
   /* _________________________________________________________________________ */
   #about {
@@ -165,28 +162,6 @@ svg {
   }
   /* _________________________________________________________________________ */
   /* _________________________________________________________________________ */
-  .boxCards {
-    grid-template-columns: 1fr;
-    gap: 100px;
-    padding: 1rem;
-  }
-
-  .cardsL,
-  .cardsR {
-    padding: 0;
-    gap: var(--gapCards);
-  }
-  .cardsR {
-    margin-top: var(--gapCards);
-  }
-
-  .cL,
-  .cR {
-    animation: appearUp 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
-    view-timeline-inset: 20%;
-  }
 
   #navBarLinks {
     width: 90%;
