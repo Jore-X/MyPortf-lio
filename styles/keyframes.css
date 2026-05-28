@@ -42,7 +42,7 @@
 @keyframes appearLeft {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(5px) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: -50vw 0;
   }
   50% {
@@ -52,14 +52,14 @@
   }
   100% {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: 0 0;
   }
 }
 @keyframes appearRight {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(5px) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: 50vw 0;
   }
   50% {
@@ -69,14 +69,14 @@
   }
   100% {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: 0 0;
   }
 }
 @keyframes appearUp {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(5px) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: 0 -50vh;
     scale: 0.1;
   }
@@ -88,7 +88,7 @@
   }
   100% {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0) drop-shadow(0 0 30px var(--shadow_cards_color));
     translate: 0 0;
     scale: 1;
   }
@@ -110,5 +110,14 @@
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
   }
 }

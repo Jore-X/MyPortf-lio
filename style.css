@@ -17,6 +17,7 @@
   --cor_teste_1: rgb(255, 255, 255, 0.5);
   --cor_teste_2: rgb(255, 255, 0, 0.5);
   --gapCards: 100px;
+  --shadow_cards_color: rgba(255, 255, 255, 0.2);
 }
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
@@ -130,6 +131,7 @@ svg {
 @media screen and (max-width: 768px) {
   .sections {
     flex-wrap: wrap;
+    padding: 0.5rem;
   }
 
   .divButtons {
@@ -155,9 +157,6 @@ svg {
   #fotoDev {
     width: 60%;
   }
-  #projects {
-    padding-top: 15rem;
-  }
   /* _________________________________________________________________________ */
   /* _________________________________________________________________________ */
   #about {
@@ -165,26 +164,6 @@ svg {
   }
   /* _________________________________________________________________________ */
   /* _________________________________________________________________________ */
-  .boxCards {
-    flex-direction: column;
-  }
-
-  .cardsL,
-  .cardsR {
-    padding: 0;
-    gap: var(--gapCards);
-  }
-  .cardsR {
-    margin-top: var(--gapCards);
-  }
-
-  .cL,
-  .cR {
-    animation: appearUp 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
-    view-timeline-inset: 20%;
-  }
 
   #navBarLinks {
     width: 90%;
