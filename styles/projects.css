@@ -67,8 +67,9 @@
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0 0 30px var(--shadow_cards_color));
-  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.1),
-  0 0 30px rgba(255, 255, 255, 0.05);
+  box-shadow:
+    inset 0 0 50px 10px rgba(0, 0, 0, 0.1),
+    0 0 30px rgba(255, 255, 255, 0.05);
 }
 
 .cards {
@@ -123,7 +124,7 @@
   backdrop-filter: blur(5px);
   border-radius: 20px;
   width: 80%;
-  border: 2px solid rgba(89, 0, 255, 0.3);
+  border: 2px solid var(--indigo-eltrico-30);
   border-bottom: none;
 }
 
@@ -153,7 +154,7 @@
   object-position: center;
   animation: floating 1s ease-in-out infinite alternate;
 }
-.linkCards {
+/* .linkCards {
   position: absolute;
   z-index: 10;
   top: 0;
@@ -161,27 +162,49 @@
   width: 100%;
   height: 100%;
   background: transparent;
-}
-
-.links-repository {
-  width: 150px;
-  text-decoration: none;
+} */
+.project-links-box {
+  width: 80%;
+  gap: 4px;
   display: flex;
-  gap: 5px;
-  align-items: center;
-  background-color: #0d1117;
-  color: #fff;
-  border-radius: 10px;
-  padding: 0.5rem;
-  transition: 0.5s;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  margin: 8px 0 0;
 }
+.links-live,
+.links-repository {
+  font-size: 0.8rem;
+  min-width: 130px;
+  width: 40%;
+  padding: 12px;
+  gap: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: 800;
+}
+.links-live {
+  background: var(--floral-white);
+  color: #0d1117;
+}
+.links-repository {
+  background-color: #0d1117;
+  color: var(--floral-white);
+}
+.links-live:hover,
 .links-repository:hover {
   transform: translateY(-4px);
   transition: 0.5s;
 }
 
-.links-repository .fa-arrow-up-right-from-square {
-  font-size: 0.7rem;
+.links-live > i,
+.links-repository > i {
+  display: flex;
+  font-size: 0.75rem;
 }
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
@@ -196,6 +219,20 @@
   animation-timeline: view();
   animation-range: cover 0% cover 50%;
   view-timeline-inset: 20%;
+}
+@media screen and (max-width: 1024px) {
+  .boxCards {
+    grid-template-columns: 1fr;
+    gap: var(--gapCards);
+    padding: 0;
+  }
+  .cL,
+  .cR {
+    animation: appearUp 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    view-timeline-inset: 20%;
+  }
 }
 
 @media screen and (max-width: 768px) {
