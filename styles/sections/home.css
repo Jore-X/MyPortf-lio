@@ -54,10 +54,10 @@
   padding: 2rem;
 }
 
-.dev-text {
+.contrast-text {
   text-transform: uppercase;
-  color: #6366f1;
-  background: var(--dark-blue2);
+  color: #845ad8;
+  background: #100f2c;
   text-align: center;
   padding: 8px;
   width: 225px;
