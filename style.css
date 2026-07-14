@@ -1,10 +1,10 @@
-@import url(./styles/backgroundStars.css);
-@import url(./styles/buttonStars.css);
-@import url(./styles/header.css);
-@import url(./styles/home.css);
-@import url(./styles/about.css);
-@import url(./styles/projects.css);
-@import url(./styles/contact.css);
+@import url(./styles/thinks/backgroundStars.css);
+@import url(./styles/thinks/buttonStars.css);
+@import url(./styles/thinks/header.css);
+@import url(./styles/sections/home.css);
+@import url(./styles/sections/about.css);
+@import url(./styles/sections/projects.css);
+@import url(./styles/sections/contact.css);
 @import url(./styles/keyframes.css);
 
 * {
