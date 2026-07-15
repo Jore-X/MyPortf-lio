@@ -68,7 +68,7 @@
 
 .dev-title {
   margin: 16px 0 0;
-  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
   font-weight: 600;
 }
 .dev-title > span {
@@ -84,12 +84,12 @@
 }
 .dev-title > div {
   margin: 8px 0 0;
-  font-size: clamp(1.45rem, 3.5vw, 2.6rem);
+  font-size: clamp(1.45rem, 3.5vw, 2.4rem);
 }
 .dev-subtitle {
   margin: 24px 0 0;
   color: #94a3b8;
-  font-size: clamp(0.95rem, 2.2vw, 1.5rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.3rem);
   letter-spacing: 1px;
 }
 
@@ -136,7 +136,7 @@
 
 .technologies-text {
   color: #94a3b8;
-  font-size: clamp(0.75rem, 2.2vw, 1.1rem);
+  font-size: clamp(0.75rem, 2.2vw, 1rem);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
