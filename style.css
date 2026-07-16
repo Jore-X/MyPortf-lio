@@ -16,8 +16,13 @@
   color: var(--floral-white);
 }
 :root {
+  --blue-text: #94a3b8;
+  --gradient-title: linear-gradient(to right, #516df5, #835ef7);
+  --gradient-button: linear-gradient(60deg, #243083, #845ad8);
   --dark-blue: #000612;
   --dark-blue2: #040b1b;
+  --color-contrast: #845ad8;
+  --background-contrast: #100f2c;
   --indigo-eltrico-100: rgb(111, 0, 255);
   --indigo-eltrico-30: rgba(111, 0, 255, 0.3);
   --floral-white: #fffaf0;
