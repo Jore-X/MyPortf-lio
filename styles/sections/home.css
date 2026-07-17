@@ -66,7 +66,7 @@
   max-width: 700px;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  padding: 0 0 64px 32px;
+  padding: 0 0 16px 32px;
   position: relative;
   z-index: 2;
 }
@@ -184,6 +184,9 @@
   }
   .img-home {
     display: none;
+  }
+  .text-home {
+    padding: 24px;
   }
 }
 @media screen and (max-width: 480px) {
