@@ -26,30 +26,67 @@
   </head>
   <body>
     <header>
-      <div class="header-logo">
-        <i class="fa-brands fa-codepen"></i>JoreCode
+      <div class="btn-and-logo-box">
+        <button class="open-btn"><i class="fa-solid fa-bars"></i></button>
+        <div class="header-logo">
+          <i class="fa-brands fa-codepen"></i>JoreCode
+        </div>
       </div>
       <nav id="navBarLinks">
         <ul>
           <li class="navLinks active">
+            <a href="#home">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#services">
+              <span>Sobre</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#projects">
+              <span>Projetos</span>
+            </a>
+          </li>
+          <li class="navLinks">
+            <a href="#contact">
+              <span>Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#contact" class="cta-header-btn"
+        >Fale Comigo<i class="fa-solid fa-arrow-right-from-bracket"></i
+      ></a>
+    </header>
+    <div class="side-shadow-close"></div>
+    <aside class="side-menu">
+      <div class="header-logo mobile-logo">
+        <i class="fa-brands fa-codepen"></i>JoreCode
+      </div>
+      <button class="close-btn">Fechar</button>
+      <nav id="nav_side">
+        <ul>
+          <li class="nav-aside-links active">
             <a href="#home"
               ><i class="fa-regular fa-house"></i>
               <span>Inicio</span>
             </a>
           </li>
-          <li class="navLinks">
+          <li class="nav-aside-links">
             <a href="#services"
-              ><i class="fa-solid fa-circle-info"></i>
+              ><i class="fa-regular fa-user"></i>
               <span>Sobre</span>
             </a>
           </li>
-          <li class="navLinks">
+          <li class="nav-aside-links">
             <a href="#projects"
               ><i class="fa-regular fa-folder-open"></i>
               <span>Projetos</span>
             </a>
           </li>
-          <li class="navLinks">
+          <li class="nav-aside-links">
             <a href="#contact">
               <i class="fa-regular fa-address-card"></i>
               <span>Contato</span>
@@ -57,8 +94,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#contact" class="cta-header-btn">Fale Comigo!</a>
-    </header>
+    </aside>
     <main>
       <div id="arrowBox">
         <img id="arrowDown" src="./assets/img/ArrowDown.png" alt="Arrow Down" />

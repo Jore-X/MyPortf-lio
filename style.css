@@ -29,8 +29,6 @@
   --indigo-eltrico-100: rgb(111, 0, 255);
   --indigo-eltrico-30: rgba(111, 0, 255, 0.3);
   --floral-white: #fffaf0;
-  --cor_teste_1: rgb(255, 255, 255, 0.5);
-  --cor_teste_2: rgb(255, 255, 0, 0.5);
   --shadow_cards_color: rgba(255, 255, 255, 0.2);
   /* __________________________ */
   /* SIZES */
@@ -39,23 +37,7 @@
   --gapCards: 100px;
 }
 /* _________________________________________________________________________ */
-/* _________________________________________________________________________ */
-.btnStars {
-  display: block;
-}
-.divButtons {
-  display: flex;
-  gap: 12px;
-}
-.divButtons a {
-  text-decoration: none;
-  display: flex;
-}
-.divButtons strong {
-  text-align: center;
-}
-/* _________________________________________________________________________ */
-/* _________________________________________________________________________ */
+
 html {
   scroll-behavior: smooth;
 }
@@ -67,6 +49,9 @@ a,
 li {
   text-decoration: none;
   list-style: none;
+}
+button {
+  border: none;
 }
 /* _____________________________________ */
 .sections {
@@ -158,54 +143,7 @@ li {
     padding: 0.5rem;
   }
 
-  .divButtons {
-    flex-direction: column;
-  }
-
   #arrowDown {
     bottom: 70px;
-  }
-
-  .radioInputs {
-    gap: 10px;
-  }
-  #divHome {
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  #textHome {
-    align-items: center;
-  }
-  #fotoDev {
-    width: 60%;
-  }
-  /* _________________________________________________________________________ */
-  /* _________________________________________________________________________ */
-  #about {
-    scroll-margin-top: -75px;
-  }
-  /* _________________________________________________________________________ */
-  /* _________________________________________________________________________ */
-
-  #navBarLinks {
-    width: 90%;
-    font-size: 1rem;
-  }
-  #navBarLinks ul {
-    padding: 0.5rem 5% 0rem 5%;
-    gap: 1vw;
-  }
-  .navLinks i {
-    display: block;
-  }
-
-  .navLinks span,
-  .navLinks.active i {
-    display: none;
-  }
-  .navLinks.active span {
-    display: block;
   }
 }

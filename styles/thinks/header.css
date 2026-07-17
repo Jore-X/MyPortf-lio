@@ -11,13 +11,13 @@ header {
   padding: 12px;
   box-shadow: 0 5px 20px var(--background-contrast);
 }
-header > *{
+header > * {
   height: 100%;
 }
 /* header * {
   border: 1px solid;
 } */
-.header-logo{
+.header-logo {
   padding: 0 12px;
   text-wrap: nowrap;
   display: flex;
@@ -55,7 +55,7 @@ header > *{
   height: 100%;
 }
 .navLinks::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 0%;
@@ -80,98 +80,142 @@ header > *{
 
 .cta-header-btn {
   background: var(--gradient-button);
+  max-width: 150px;
+  width: 100%;
+  max-height: 50px;
   padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 150px;
-  height: 50px;
+  gap: 6px;
+  border-radius: 10px;
   aspect-ratio: 10/1;
+  font-weight: 700;
+}
+
+/* __________________________________________________ */
+/* __________________________________________________ */
+/* .side-menu * {
+  border: 1px solid;
+} */
+.side-shadow-close {
+  pointer-events: none;
+  opacity: 0;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  transition: opacity 0.4s ease;
+}
+.side-shadow-close.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+.side-menu {
+  position: fixed;
+  width: 175px;
+  height: 100%;
+  max-height: 100vh;
+  background: var(--dark-blue2);
+  padding: 8px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0 15px var(--background-contrast);
+  z-index: 10;
+  top: 0;
+  left: -175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: left 0.4s ease;
+}
+.side-menu.active {
+  left: 0;
+}
+.btn-and-logo-box {
+  display: flex;
+  align-items: center;
+}
+.open-btn {
+  display: none;
+  background: transparent;
+  aspect-ratio: 1/1;
+  height: 25px;
+  font-size: 1.2rem;
+}
+.close-btn {
+  align-self: center;
+  max-width: 100px;
+  width: 100%;
+  padding: 8px;
+  background: var(--gradient-title);
   border-radius: 10px;
 }
-
-/* __________________________________________________ */
-/* __________________________________________________ */
-/* 
-header {
-  position: fixed;
-  z-index: 3;
+.mobile-logo {
+  padding: 16px 8px;
+  font-size: 1.15rem;
+}
+#nav_side {
+  margin: 20px 0 0;
+  padding: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#nav_side > ul {
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+}
+.nav-aside-links {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  border-radius: 10px;
 }
-
-#navBarLinks > ul {
-  display: flex;
-  overflow: hidden;
-  padding: 0.5rem 2rem 0rem 2rem;
-  border-radius: 0 0 30px 30px;
-  background: #004aad;
-  gap: 20px;
-  justify-content: space-evenly;
-  align-items: center;
+.nav-aside-links > a {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
 }
-#navBarLinks li {
-  list-style: none;
+.nav-aside-links > a > span {
+  letter-spacing: 2px;
+  font-weight: 700;
 }
-.navLinks i {
-  display: none;
+.nav-aside-links.active {
+  background: var(--background-contrast);
 }
-.navLinks a {
-  font-weight: bold;
-  color: #b3bbea;
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem 0.5rem 0 0;
-  border: none;
-  padding: 0.5rem 1rem;
-  transition: all 0.15s ease-in-out;
-  position: relative;
+.nav-aside-links.active > a > i {
+  font-weight: 700;
 }
-
-.navLinks a:hover {
-  color: #fff;
+.nav-aside-links.active > a > i,
+.nav-aside-links.active > a > span {
+  color: var(--color-contrast);
 }
-.navLinks.active a {
-  background: black;
-  font-weight: 600;
-}
-
-.navLinks.active a:hover {
-  color: #e8e8e8;
-}
-
-.navLinks.active a::after,
-.navLinks.active a::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #004aad;
-  bottom: 0;
-  animation: easeIn 0.15s ease-in;
-}
-.navLinks.active a::after {
-  right: -10px;
-  border-bottom-left-radius: 300px;
-  box-shadow: -5px 5px 0px 5px black;
-}
-.navLinks.active a::before {
-  left: -10px;
-  border-bottom-right-radius: 300px;
-  box-shadow: 5px 5px 0px 5px black;
-}
+/* __________________________________________________ */
+/* __________________________________________________ */
 
 @media screen and (max-width: 768px) {
   header {
-    bottom: 0;
+    justify-content: auto;
   }
-
-  #navBarLinks > ul {
-    border-radius: 30px 30px 0 0;
+  .open-btn {
+    display: block;
   }
-} */
+  #navBarLinks {
+    display: none;
+  }
+  .cta-header-btn {
+    justify-self: flex-end;
+    font-size: 0.9rem;
+    max-width: 135px;
+    max-height: 40px;
+  }
+  /* .side-menu {
+    left: -175px;
+  } */
+}
