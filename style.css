@@ -1,10 +1,10 @@
-@import url(./styles/backgroundStars.css);
-@import url(./styles/buttonStars.css);
-@import url(./styles/header.css);
-@import url(./styles/home.css);
-@import url(./styles/about.css);
-@import url(./styles/projects.css);
-@import url(./styles/contact.css);
+@import url(./styles/thinks/backgroundStars.css);
+@import url(./styles/thinks/buttonStars.css);
+@import url(./styles/thinks/header.css);
+@import url(./styles/sections/home.css);
+@import url(./styles/sections/about.css);
+@import url(./styles/sections/projects.css);
+@import url(./styles/sections/contact.css);
 @import url(./styles/keyframes.css);
 
 * {
@@ -12,8 +12,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  user-select: none;
+  color: var(--floral-white);
 }
 :root {
+  --blue-text: #94a3b8;
+  --gradient-title: linear-gradient(to right, #516df5, #835ef7);
+  --gradient-button: linear-gradient(60deg, #243083, #845ad8);
+  --dark-blue: #000612;
+  --dark-blue2: #040b1b;
+  --color-contrast: #845ad8;
+  --background-contrast: #100f2c;
+  --indigo-eltrico-100: rgb(111, 0, 255);
+  --indigo-eltrico-30: rgba(111, 0, 255, 0.3);
+  --floral-white: #fffaf0;
   --cor_teste_1: rgb(255, 255, 255, 0.5);
   --cor_teste_2: rgb(255, 255, 0, 0.5);
   --gapCards: 100px;
@@ -28,7 +40,7 @@
   display: flex;
   gap: 12px;
 }
-.divButtons a{
+.divButtons a {
   text-decoration: none;
   display: flex;
 }
@@ -44,7 +56,9 @@ svg {
   color: #29076d9a;
   margin-bottom: -4.3px;
 }
-
+a {
+  text-decoration: none;
+}
 /* _____________________________________ */
 .sections {
   display: flex;
