@@ -56,8 +56,10 @@ svg {
   color: #29076d9a;
   margin-bottom: -4.3px;
 }
-a {
+a ,
+li{
   text-decoration: none;
+  list-style: none;
 }
 /* _____________________________________ */
 .sections {

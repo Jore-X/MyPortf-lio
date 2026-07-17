@@ -1,4 +1,3 @@
-// const overlay_about_btn = document.querySelector(".overlay-action");
 const about_card = document.querySelector(".about-card");
 const about_overlay = document.querySelector(".about-overlay");
 const about_overlay_p = document.querySelector(".about-overlay > p");
