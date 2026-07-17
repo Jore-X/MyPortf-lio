@@ -1,9 +1,0 @@
-#about {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-}
-.lorem {
-    width: 70%;
-    text-align: center;
-}
