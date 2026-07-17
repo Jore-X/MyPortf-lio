@@ -124,7 +124,7 @@ header > * {
   box-shadow: 4px 0 15px var(--background-contrast);
   z-index: 10;
   top: 0;
-  left: -175px;
+  left: -185px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -135,12 +135,13 @@ header > * {
 }
 .btn-and-logo-box {
   display: flex;
-  align-items: center;
 }
 .open-btn {
   display: none;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
   background: transparent;
-  aspect-ratio: 1/1;
   height: 25px;
   font-size: 1.2rem;
 }
@@ -204,7 +205,7 @@ header > * {
     justify-content: auto;
   }
   .open-btn {
-    display: block;
+    display: flex;
   }
   #navBarLinks {
     display: none;
