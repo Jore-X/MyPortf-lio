@@ -119,18 +119,6 @@ button {
 .fa-linkedin-in {
   color: #0e76a8;
 }
-#arrowBox {
-  animation: disappearScroll linear;
-  animation-timeline: scroll();
-  animation-range: 0% 100%;
-}
-#arrowDown {
-  width: 50px;
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  animation: tobottom 1s alternate infinite;
-}
 /* _______________________________________________________________________________ */
 /* _______________________________________________________________________________ */
 /* MOBILE PART */
@@ -141,9 +129,5 @@ button {
   .sections {
     flex-wrap: wrap;
     padding: 0.5rem;
-  }
-
-  #arrowDown {
-    bottom: 70px;
   }
 }
