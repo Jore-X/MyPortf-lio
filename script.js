@@ -1,10 +1,13 @@
 const about_card = document.querySelector(".about-card");
 const about_overlay = document.querySelector(".about-overlay");
 const about_overlay_p = document.querySelector(".about-overlay > p");
+// ______________________________
 const open_side_btn = document.querySelector(".open-btn");
 const close_side_btn = document.querySelector(".close-btn");
 const close_side_shadow = document.querySelector(".side-shadow-close");
 const side_menu = document.querySelector(".side-menu");
+const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
+// ______________________________
 
 about_overlay.addEventListener("click", () => {
   about_card.classList.toggle("active");
@@ -27,5 +30,9 @@ close_side_shadow.addEventListener("click", () => {
   side_menu.classList.remove("active");
   close_side_shadow.classList.remove("active");
 });
-
-
+nav_side_links.forEach((links) => {
+  links.addEventListener("click", () => {
+    side_menu.classList.remove("active");
+    close_side_shadow.classList.remove("active");
+  });
+});
