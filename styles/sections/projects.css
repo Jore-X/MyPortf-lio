@@ -222,9 +222,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* #projects {
-    padding-top: 15rem;
-  } */
+  #projects {
+    padding: 32px 0;
+  }
   /* _________________________________________________________________________ */
   /* _________________________________________________________________________ */
   .boxCards {
@@ -241,7 +241,7 @@
   }
   .info-cards {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px;
     font-size: 0.8rem;
   }
 
