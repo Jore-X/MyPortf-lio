@@ -7,7 +7,18 @@ const close_side_btn = document.querySelector(".close-btn");
 const close_side_shadow = document.querySelector(".side-shadow-close");
 const side_menu = document.querySelector(".side-menu");
 const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
-
+// _____________________________________________
+// Função para remover o historico de links <a>
+// ______________________________
+const links = document.querySelectorAll("a");
+links.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const urlDestino = this.href;
+    window.location.replace(urlDestino);
+  });
+});
+// _____________________________________________________
 
 about_overlay.addEventListener("click", () => {
   about_card.classList.toggle("active");
