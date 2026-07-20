@@ -28,6 +28,7 @@ about_overlay.addEventListener("click", () => {
     about_overlay.textContent = "Ver mais";
   }
 });
+// __________________________________________________
 
 open_side_btn.addEventListener("click", () => {
   side_menu.classList.add("active");
