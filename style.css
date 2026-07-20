@@ -19,6 +19,7 @@
   /* _______________________ */
   /* COLORS */
   /* _______________________ */
+  --dark-30: rgba(0, 0, 0, 0.3);
   --blue-text: #94a3b8;
   --gradient-title: linear-gradient(to right, #516df5, #835ef7);
   --gradient-button: linear-gradient(60deg, #243083, #845ad8);

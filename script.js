@@ -7,7 +7,7 @@ const close_side_btn = document.querySelector(".close-btn");
 const close_side_shadow = document.querySelector(".side-shadow-close");
 const side_menu = document.querySelector(".side-menu");
 const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
-// ______________________________
+
 
 about_overlay.addEventListener("click", () => {
   about_card.classList.toggle("active");
@@ -17,6 +17,7 @@ about_overlay.addEventListener("click", () => {
     about_overlay.textContent = "Ver mais";
   }
 });
+// __________________________________________________
 
 open_side_btn.addEventListener("click", () => {
   side_menu.classList.add("active");
