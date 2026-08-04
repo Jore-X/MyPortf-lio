@@ -10,7 +10,9 @@ const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
 // _____________________________________________
 // Função para remover o historico de links <a>
 // ______________________________
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll(
+  "a:not(.links-live, .links-repository, .links_contact)",
+);
 links.forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -47,4 +49,103 @@ nav_side_links.forEach((links) => {
     side_menu.classList.remove("active");
     close_side_shadow.classList.remove("active");
   });
+});
+
+// ________________________________________________________
+// Carrosel Script
+
+// _____________________
+// FUNÇÃO PARA REMOVER AS CLASSES
+const remove_all_classes = (elements_list) => {
+  for (let i = 0; i < elements_list.length; i++) {
+    elements_list[i].classList.remove("active");
+    elements_list[i].classList.remove("next-card");
+    elements_list[i].classList.remove("back-card");
+  }
+};
+// ______________________________________
+// FUNÇÔES DE COMPORTAMENTO DOS BOTÔES DO CARROSSEL
+const btn_back_function = (carousel_itens, btn_back, btn_next) => {
+  btn_back.addEventListener("click", () => {
+    const index_active = Array.from(carousel_itens).findIndex((el) =>
+      el.classList.contains("active"),
+    );
+    if (index_active > 0) {
+      remove_all_classes(carousel_itens);
+      btn_next.classList.remove("disable");
+
+      carousel_itens[index_active].classList.add("next-card");
+      carousel_itens[index_active].classList.remove("active");
+
+      carousel_itens[index_active - 1].classList.remove("back-card");
+      if (index_active - 1 > 0) {
+        carousel_itens[index_active - 2].classList.add("back-card");
+      } else {
+        btn_back.classList.add("disable");
+      }
+      carousel_itens[index_active - 1].classList.add("active");
+    }
+  });
+};
+// _______________________________
+const btn_next_function = (carousel_itens, btn_back, btn_next) => {
+  btn_next.addEventListener("click", () => {
+    const index_active = Array.from(carousel_itens).findIndex((el) =>
+      el.classList.contains("active"),
+    );
+    if (index_active + 1 < carousel_itens.length) {
+      remove_all_classes(carousel_itens);
+      btn_back.classList.remove("disable");
+
+      carousel_itens[index_active].classList.add("back-card");
+      carousel_itens[index_active].classList.remove("active");
+
+      carousel_itens[index_active + 1].classList.remove("next-card");
+      if (index_active + 2 < carousel_itens.length) {
+        carousel_itens[index_active + 2].classList.add("next-card");
+      } else {
+        btn_next.classList.add("disable");
+      }
+      carousel_itens[index_active + 1].classList.add("active");
+    }
+  });
+};
+// _______________________________
+const carousels_list = [".carousel-LPs", ".carousel-IAs", ".carousel-others"];
+const btns_back_list = [
+  ".btn-back-card-LPs",
+  ".btn-back-card-IAs",
+  ".btn-back-card-others",
+];
+const btns_next_list = [
+  ".btn-next-card-LPs",
+  ".btn-next-card-IAs",
+  ".btn-next-card-others",
+];
+
+for (let i = 0; i < carousels_list.length; i++) {
+  const carousel_itens = document.querySelectorAll(carousels_list[i]);
+  const btn_back = document.querySelector(btns_back_list[i]);
+  const btn_next = document.querySelector(btns_next_list[i]);
+
+  btn_back_function(carousel_itens, btn_back, btn_next);
+  btn_next_function(carousel_itens, btn_back, btn_next);
+}
+
+// _______________________________________
+//  SCRIPT PARA MOSTRAR O CARROSSEL Others
+const btn_show_others = document.querySelector(".btn-show-others");
+const box_cards = document.querySelector(".boxCards");
+const carousel_box = document.querySelectorAll(".carousels-box");
+
+btn_show_others.addEventListener("click", () => {
+  if (carousel_box[2].classList.contains("hide-others")) {
+    btn_show_others.textContent = "Esconder Outros"
+    carousel_box[2].classList.remove("hide-others");
+    box_cards.classList.remove("hide-others");
+  } else {
+    btn_show_others.textContent = "Mostrar Outros"
+    carousel_box[2].classList.add("hide-others");
+    box_cards.classList.add("hide-others");
+  }
 });
