@@ -10,7 +10,9 @@ const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
 // _____________________________________________
 // Função para remover o historico de links <a>
 // ______________________________
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll(
+  "a:not(.links-live, .links-repository, .links_contact)",
+);
 links.forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -61,83 +63,72 @@ const remove_all_classes = (elements_list) => {
     elements_list[i].classList.remove("back-card");
   }
 };
+// ______________________________________
+// FUNÇÔES DE COMPORTAMENTO DOS BOTÔES DO CARROSSEL
+const btn_back_function = (carousel_itens, btn_back, btn_next) => {
+  btn_back.addEventListener("click", () => {
+    const index_active = Array.from(carousel_itens).findIndex((el) =>
+      el.classList.contains("active"),
+    );
+    if (index_active > 0) {
+      remove_all_classes(carousel_itens);
+      btn_next.classList.remove("disable");
+
+      carousel_itens[index_active].classList.add("next-card");
+      carousel_itens[index_active].classList.remove("active");
+
+      carousel_itens[index_active - 1].classList.remove("back-card");
+      if (index_active - 1 > 0) {
+        carousel_itens[index_active - 2].classList.add("back-card");
+      } else {
+        btn_back.classList.add("disable");
+      }
+      carousel_itens[index_active - 1].classList.add("active");
+    }
+  });
+};
 // _______________________________
+const btn_next_function = (carousel_itens, btn_back, btn_next) => {
+  btn_next.addEventListener("click", () => {
+    const index_active = Array.from(carousel_itens).findIndex((el) =>
+      el.classList.contains("active"),
+    );
+    if (index_active + 1 < carousel_itens.length) {
+      remove_all_classes(carousel_itens);
+      btn_back.classList.remove("disable");
 
-const carousel_LPs_itens = document.querySelectorAll(".carousel-LPs");
-const btn_back_LPs = document.querySelector(".btn-back-card-LPs");
-const btn_next_LPs = document.querySelector(".btn-next-card-LPs");
+      carousel_itens[index_active].classList.add("back-card");
+      carousel_itens[index_active].classList.remove("active");
 
-btn_back_LPs.addEventListener("click", () => {
-  const index_active_LP = Array.from(carousel_LPs_itens).findIndex((el) =>
-    el.classList.contains("active"),
-  );
-  if (index_active_LP > 0) {
-    remove_all_classes(carousel_LPs_itens);
-
-    carousel_LPs_itens[index_active_LP].classList.add("next-card");
-    carousel_LPs_itens[index_active_LP].classList.remove("active");
-
-    carousel_LPs_itens[index_active_LP - 1].classList.remove("back-card");
-    if (index_active_LP - 1 > 0) {
-      carousel_LPs_itens[index_active_LP - 2].classList.add("back-card");
+      carousel_itens[index_active + 1].classList.remove("next-card");
+      if (index_active + 2 < carousel_itens.length) {
+        carousel_itens[index_active + 2].classList.add("next-card");
+      } else {
+        btn_next.classList.add("disable");
+      }
+      carousel_itens[index_active + 1].classList.add("active");
     }
-    carousel_LPs_itens[index_active_LP - 1].classList.add("active");
-  }
-});
-btn_next_LPs.addEventListener("click", () => {
-  const index_active_LP = Array.from(carousel_LPs_itens).findIndex((el) =>
-    el.classList.contains("active"),
-  );
-  if (index_active_LP + 1 < carousel_LPs_itens.length) {
-    remove_all_classes(carousel_LPs_itens);
+  });
+};
+// _______________________________
+const carousels_list = [".carousel-LPs", ".carousel-IAs", ".carousel-others"];
+const btns_back_list = [
+  ".btn-back-card-LPs",
+  ".btn-back-card-IAs",
+  ".btn-back-card-others",
+];
+const btns_next_list = [
+  ".btn-next-card-LPs",
+  ".btn-next-card-IAs",
+  ".btn-next-card-others",
+];
 
-    carousel_LPs_itens[index_active_LP].classList.add("back-card");
-    carousel_LPs_itens[index_active_LP].classList.remove("active");
+for (let i = 0; i < carousels_list.length; i++) {
+  const carousel_itens = document.querySelectorAll(carousels_list[i]);
+  const btn_back = document.querySelector(btns_back_list[i]);
+  const btn_next = document.querySelector(btns_next_list[i]);
 
-    carousel_LPs_itens[index_active_LP + 1].classList.remove("next-card");
-    if (index_active_LP + 2 < carousel_LPs_itens.length) {
-      carousel_LPs_itens[index_active_LP + 2].classList.add("next-card");
-    }
-    carousel_LPs_itens[index_active_LP + 1].classList.add("active");
-  }
-});
-// _________________________________________
-
-const carousel_IAs_itens = document.querySelectorAll(".carousel-IAs");
-const btn_back_IAs = document.querySelector(".btn-back-card-IAs");
-const btn_next_IAs = document.querySelector(".btn-next-card-IAs");
-
-btn_back_IAs.addEventListener("click", () => {
-  const index_active_LP = Array.from(carousel_IAs_itens).findIndex((el) =>
-    el.classList.contains("active"),
-  );
-  if (index_active_LP > 0) {
-    remove_all_classes(carousel_IAs_itens);
-
-    carousel_IAs_itens[index_active_LP].classList.add("next-card");
-    carousel_IAs_itens[index_active_LP].classList.remove("active");
-
-    carousel_IAs_itens[index_active_LP - 1].classList.remove("back-card");
-    if (index_active_LP - 1 > 0) {
-      carousel_IAs_itens[index_active_LP - 2].classList.add("back-card");
-    }
-    carousel_IAs_itens[index_active_LP - 1].classList.add("active");
-  }
-});
-btn_next_IAs.addEventListener("click", () => {
-  const index_active_LP = Array.from(carousel_IAs_itens).findIndex((el) =>
-    el.classList.contains("active"),
-  );
-  if (index_active_LP + 1 < carousel_IAs_itens.length) {
-    remove_all_classes(carousel_IAs_itens);
-
-    carousel_IAs_itens[index_active_LP].classList.add("back-card");
-    carousel_IAs_itens[index_active_LP].classList.remove("active");
-
-    carousel_IAs_itens[index_active_LP + 1].classList.remove("next-card");
-    if (index_active_LP + 2 < carousel_IAs_itens.length) {
-      carousel_IAs_itens[index_active_LP + 2].classList.add("next-card");
-    }
-    carousel_IAs_itens[index_active_LP + 1].classList.add("active");
-  }
-});
+  btn_back_function(carousel_itens, btn_back, btn_next);
+  btn_next_function(carousel_itens, btn_back, btn_next);
+}
+// _______________________________
