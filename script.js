@@ -48,3 +48,96 @@ nav_side_links.forEach((links) => {
     close_side_shadow.classList.remove("active");
   });
 });
+
+// ________________________________________________________
+// Carrosel Script
+
+// _____________________
+// FUNÇÃO PARA REMOVER AS CLASSES
+const remove_all_classes = (elements_list) => {
+  for (let i = 0; i < elements_list.length; i++) {
+    elements_list[i].classList.remove("active");
+    elements_list[i].classList.remove("next-card");
+    elements_list[i].classList.remove("back-card");
+  }
+};
+// _______________________________
+
+const carousel_LPs_itens = document.querySelectorAll(".carousel-LPs");
+const btn_back_LPs = document.querySelector(".btn-back-card-LPs");
+const btn_next_LPs = document.querySelector(".btn-next-card-LPs");
+
+btn_back_LPs.addEventListener("click", () => {
+  const index_active_LP = Array.from(carousel_LPs_itens).findIndex((el) =>
+    el.classList.contains("active"),
+  );
+  if (index_active_LP > 0) {
+    remove_all_classes(carousel_LPs_itens);
+
+    carousel_LPs_itens[index_active_LP].classList.add("next-card");
+    carousel_LPs_itens[index_active_LP].classList.remove("active");
+
+    carousel_LPs_itens[index_active_LP - 1].classList.remove("back-card");
+    if (index_active_LP - 1 > 0) {
+      carousel_LPs_itens[index_active_LP - 2].classList.add("back-card");
+    }
+    carousel_LPs_itens[index_active_LP - 1].classList.add("active");
+  }
+});
+btn_next_LPs.addEventListener("click", () => {
+  const index_active_LP = Array.from(carousel_LPs_itens).findIndex((el) =>
+    el.classList.contains("active"),
+  );
+  if (index_active_LP + 1 < carousel_LPs_itens.length) {
+    remove_all_classes(carousel_LPs_itens);
+
+    carousel_LPs_itens[index_active_LP].classList.add("back-card");
+    carousel_LPs_itens[index_active_LP].classList.remove("active");
+
+    carousel_LPs_itens[index_active_LP + 1].classList.remove("next-card");
+    if (index_active_LP + 2 < carousel_LPs_itens.length) {
+      carousel_LPs_itens[index_active_LP + 2].classList.add("next-card");
+    }
+    carousel_LPs_itens[index_active_LP + 1].classList.add("active");
+  }
+});
+// _________________________________________
+
+const carousel_IAs_itens = document.querySelectorAll(".carousel-IAs");
+const btn_back_IAs = document.querySelector(".btn-back-card-IAs");
+const btn_next_IAs = document.querySelector(".btn-next-card-IAs");
+
+btn_back_IAs.addEventListener("click", () => {
+  const index_active_LP = Array.from(carousel_IAs_itens).findIndex((el) =>
+    el.classList.contains("active"),
+  );
+  if (index_active_LP > 0) {
+    remove_all_classes(carousel_IAs_itens);
+
+    carousel_IAs_itens[index_active_LP].classList.add("next-card");
+    carousel_IAs_itens[index_active_LP].classList.remove("active");
+
+    carousel_IAs_itens[index_active_LP - 1].classList.remove("back-card");
+    if (index_active_LP - 1 > 0) {
+      carousel_IAs_itens[index_active_LP - 2].classList.add("back-card");
+    }
+    carousel_IAs_itens[index_active_LP - 1].classList.add("active");
+  }
+});
+btn_next_IAs.addEventListener("click", () => {
+  const index_active_LP = Array.from(carousel_IAs_itens).findIndex((el) =>
+    el.classList.contains("active"),
+  );
+  if (index_active_LP + 1 < carousel_IAs_itens.length) {
+    remove_all_classes(carousel_IAs_itens);
+
+    carousel_IAs_itens[index_active_LP].classList.add("back-card");
+    carousel_IAs_itens[index_active_LP].classList.remove("active");
+
+    carousel_IAs_itens[index_active_LP + 1].classList.remove("next-card");
+    if (index_active_LP + 2 < carousel_IAs_itens.length) {
+      carousel_IAs_itens[index_active_LP + 2].classList.add("next-card");
+    }
+    carousel_IAs_itens[index_active_LP + 1].classList.add("active");
+  }
+});

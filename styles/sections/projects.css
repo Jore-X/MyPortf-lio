@@ -32,11 +32,58 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   padding: 2rem;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
+}
+/* ____________________________ */
+
+.carousel {
+  width: 100%;
+  place-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  overflow-x: hidden;
+}
+.carousel > * {
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
 }
 
+.projects-divs.active {
+  position: relative;
+  z-index: 2;
+  transform: scale(1);
+}
+.projects-divs.back-card {
+  transform: translateX(-105%) scaleY(0.65);
+  filter: blur(5px);
+}
+.projects-divs.next-card {
+  transform: translateX(105%) scaleY(0.65);
+  filter: blur(5px);
+}
+
+.btns-card {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background: var(--gradient-button);
+  font-size: 18px;
+}
+.btn-back-card-IAs,
+.btn-back-card-LPs {
+  left: 0;
+}
+.btn-next-card-IAs,
+.btn-next-card-LPs {
+  right: 0;
+}
+/* ____________________________ */
 .projects-divs {
+  transform: scale(0);
+  transition: transform 0.4s ease;
   width: 80%;
   max-width: 600px;
   overflow: hidden;
@@ -117,18 +164,6 @@
   border-bottom: none;
 }
 
-.cardsL,
-.cardsR {
-  /* background: var(--cor_teste_2); */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 250px 8% 50px 8%;
-  gap: 200px;
-}
 /* _________________________________________________________________________ */
 /* _________________________________________________________________________ */
 
