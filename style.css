@@ -38,6 +38,19 @@
   --gapCards: 100px;
 }
 /* _________________________________________________________________________ */
+/* AJUSTE DA SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-contrast);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-button);
+  border-radius: 2px;
+}
+/* _________________________________________________________________________ */
 
 html {
   scroll-behavior: smooth;
