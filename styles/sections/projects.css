@@ -28,26 +28,47 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 600px;
   gap: 50px;
   padding: 2rem;
   place-items: center;
+  transition: grid-template-rows 0.6s ease;
+}
+
+.boxCards.hide-others {
+  grid-template-rows: 1fr 0px;
+}
+.btn-show-others {
+  position: absolute;
+  bottom: 0;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: var(--gradient-button);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: filter 0.4s ease;
+}
+.btn-show-others:hover {
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(251, 250, 245, 0.4));
 }
 /* ____________________________ */
 .carousels-box:nth-child(3) {
-  /* transform: scale(0); */
-  /* display: none; */
   grid-column: 1 / -1;
-  animation: appearUp 1ms ease-in-out;
-  animation-timeline: view();
-  animation-range: cover 0% cover 30%;
-  view-timeline-inset: 20%;
+}
+.carousels-box.hide-others {
+  transform: scale(0);
+  height: 0;
 }
 .carousels-box {
+  transform: scale(1);
   position: relative;
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: center;
+  transition:
+    height 0.6s ease,
+    transform 0.6s ease;
 }
 .carousel-title {
   display: flex;
@@ -84,7 +105,7 @@
   place-items: center;
   display: grid;
   grid-template-rows: 1fr;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .carousel > * {
   grid-area: 1 / 1 / 2 / 2;
@@ -299,8 +320,12 @@
 @media screen and (max-width: 1024px) {
   .boxCards {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 575px;
     gap: var(--gapCards);
     padding: 0;
+  }
+  .boxCards.hide-others {
+    grid-template-rows: 1fr 1fr 0px;
   }
   .cL,
   .cR {
