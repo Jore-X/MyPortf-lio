@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,7 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <link rel="shortcut icon" href="./assets/img/icons/joreCode-icon.ico" />
     <title>Dheymerson Jore | Desenvolvedor Front-End Freelancer</title>
     <meta
@@ -123,8 +124,9 @@
             <a href="#contact"
               >Solicitar Orçamento<i class="fa-solid fa-comment"></i
             ></a>
-            <a href="#projects"
-              >Ver projetos<i class="fa-solid fa-up-right-from-square"></i
+            <a href="#projects">
+              <span> Ver projetos </span>
+              <i class="fa-solid fa-up-right-from-square"></i
             ></a>
           </div>
           <div class="dev-technologies">
@@ -140,9 +142,6 @@
               </div>
               <div class="dt-icon">
                 <img src="./assets/img/icons/js.webp" alt="Java Script" />
-              </div>
-              <div class="dt-icon">
-                <img src="./assets/img/icons/python.webp" alt="Python" />
               </div>
             </div>
           </div>
@@ -188,17 +187,16 @@
               />
               <div class="contrast-text">Sobre mim</div>
               <span
-                >Olá, <br />Meu nome é <strong>Dheymerson Jore</strong>
+                >Olá, <br />Me chamo <strong>Dheymerson Jore</strong>
               </span>
             </div>
             <div class="about-card-text">
-              Comecei a programar há mais de 6 meses, com curso técnico na área
-              e muita mão na massa por conta própria. Testando, quebrando e
-              construindo projetos reais em vez de só repetir exercício pronto.
+              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I que despertou meu interesse e paixão pela área. Então, continuei a pesquisar e praticar por conta própria, testando, quebrando e
+              construindo projetos reais.
               <br />
               <br />
               Trabalho com HTML, CSS e JavaScript para criar sites rápidos, bem
-              organizados e que funcionam perfeitamente no celular, porque é de
+              organizados e que funcionam perfeitamente no celular, afinal, é de
               lá que vem a maior parte das visitas hoje em dia.
               <br />
               <br />Estou no começo de carreira, e isso trabalha a seu favor:
@@ -215,13 +213,6 @@
         </div>
       </section>
       <div class="wavesSvg">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 126.54 1440 193.46">
-          <path
-            fill="#29076d9a"
-            fill-opacity="1"
-            d="M0,224L80,197.3C160,171,320,117,480,128C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg> -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96">
           <path
             fill="var(--dark-blue2)"
@@ -469,34 +460,37 @@
       <div class="wavesSvg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 208.84 1440 111.16">
           <path
-            fill="#29076d9a"
+            fill="var(--dark-blue2)"
             fill-opacity="1"
             d="M0,224L60,218.7C120,213,240,203,360,213.3C480,224,600,256,720,272C840,288,960,288,1080,277.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 234.7">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 234.7">
           <path
             fill="#29076d9a"
             fill-opacity="1"
             d="M0,128L40,138.7C80,149,160,171,240,176C320,181,400,171,480,149.3C560,128,640,96,720,122.7C800,149,880,235,960,234.7C1040,235,1120,149,1200,128C1280,107,1360,149,1400,170.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
           ></path>
-        </svg>
+        </svg> -->
       </div>
       <section id="contact" class="sections">
         <h2 class="title-contact">Entre em Contato</h2>
         <form class="form-contact" id="form" onsubmit="sendWhats(event)">
           <div class="form-group">
             <input placeholder="Nome" class="form-camp" id="name" />
+            <input placeholder="Sobrenome" class="form-camp" id="surname" />
           </div>
-          <div class="form-group">
+          <div class="form-group textarea-div">
             <textarea
-              class="form-camp"
+              class="form-camp textarea"
               placeholder="Digite sua Mensagem"
               id="messsage"
             ></textarea>
           </div>
-
-          <button type="submit" class="form-btn">Enviar WhatsApp</button>
+          <button type="submit" class="form-btn">
+            <span>Enviar WhatsApp </span>
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
         </form>
         <div class="social-media-buttons">
           <a
@@ -530,9 +524,22 @@
         </div>
       </section>
     </main>
+    <div class="wavesSvg footerSvg-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 165 1440 117.3">
+        <path
+          fill="var(--dark-blue)"
+          fill-opacity="1"
+          d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,218.7C672,224,768,256,864,250.7C960,245,1056,203,1152,202.7C1248,203,1344,245,1392,266.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <footer>
+      <p>&copy2025 Dheymerson Jore. Todos os Direitos Reservados.</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./scripts/toggleNav.js"></script>
+    <script src="./scripts/form_contact.js"></script>
+    <script src="./scripts/gsap.js" defer></script>
+    <script src="./scripts/reveal.js" defer></script>
   </body>
-  <script src="./script.js"></script>
-  <script src="./scripts/toggleNav.js"></script>
-  <script src="./scripts/form_contact.js"></script>
-  <script src="./scripts/reveal.js" defer></script>
 </html>
