@@ -53,6 +53,12 @@ header > * {
   justify-content: center;
   width: 100%;
   height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.navLinks.active,
+.navLinks:hover{
+  opacity: 1;
 }
 .navLinks::after {
   content: "";
@@ -74,11 +80,10 @@ header > * {
   justify-content: center;
   font-weight: 600;
 }
-.navLinks > a > i {
-  display: none;
-}
 
 .cta-header-btn {
+  position: relative;
+  overflow: hidden;
   background: var(--gradient-button);
   max-width: 150px;
   width: 100%;
@@ -91,6 +96,26 @@ header > * {
   border-radius: 10px;
   aspect-ratio: 10/1;
   font-weight: 700;
+}
+.cta-header-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--shadow_cards_color);
+  filter: brightness(0.8);
+  left: 0;
+  border-radius: 0 50px 50px 0;
+  transition:
+    width 0.6s ease,
+    border-radius 0.6s ease;
+}
+.cta-header-btn:hover::before {
+  width: 100%;
+  border-radius: 0;
+}
+.cta-header-btn > i {
+  animation: point 0.7s infinite alternate ease-in;
 }
 
 /* __________________________________________________ */
@@ -117,7 +142,7 @@ header > * {
   position: fixed;
   width: 175px;
   height: 100%;
-  max-height: 100vh;
+  max-height: 100dvh;
   background: var(--dark-blue2);
   padding: 8px;
   border-radius: 0 20px 20px 0;

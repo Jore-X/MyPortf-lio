@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,7 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <link rel="shortcut icon" href="./assets/img/icons/joreCode-icon.ico" />
     <title>Dheymerson Jore | Desenvolvedor Front-End Freelancer</title>
     <meta
@@ -123,8 +124,9 @@
             <a href="#contact"
               >Solicitar Orçamento<i class="fa-solid fa-comment"></i
             ></a>
-            <a href="#projects"
-              >Ver projetos<i class="fa-solid fa-up-right-from-square"></i
+            <a href="#projects">
+              <span> Ver projetos </span>
+              <i class="fa-solid fa-up-right-from-square"></i
             ></a>
           </div>
           <div class="dev-technologies">
@@ -140,9 +142,6 @@
               </div>
               <div class="dt-icon">
                 <img src="./assets/img/icons/js.webp" alt="Java Script" />
-              </div>
-              <div class="dt-icon">
-                <img src="./assets/img/icons/python.webp" alt="Python" />
               </div>
             </div>
           </div>
@@ -188,17 +187,16 @@
               />
               <div class="contrast-text">Sobre mim</div>
               <span
-                >Olá, <br />Meu nome é <strong>Dheymerson Jore</strong>
+                >Olá, <br />Me chamo <strong>Dheymerson Jore</strong>
               </span>
             </div>
             <div class="about-card-text">
-              Comecei a programar há mais de 6 meses, com curso técnico na área
-              e muita mão na massa por conta própria. Testando, quebrando e
-              construindo projetos reais em vez de só repetir exercício pronto.
+              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I que despertou meu interesse e paixão pela área. Então, continuei a pesquisar e praticar por conta própria, testando, quebrando e
+              construindo projetos reais.
               <br />
               <br />
               Trabalho com HTML, CSS e JavaScript para criar sites rápidos, bem
-              organizados e que funcionam perfeitamente no celular, porque é de
+              organizados e que funcionam perfeitamente no celular, afinal, é de
               lá que vem a maior parte das visitas hoje em dia.
               <br />
               <br />Estou no começo de carreira, e isso trabalha a seu favor:
@@ -538,9 +536,10 @@
     <footer>
       <p>&copy2025 Dheymerson Jore. Todos os Direitos Reservados.</p>
     </footer>
+    <script src="./script.js"></script>
+    <script src="./scripts/toggleNav.js"></script>
+    <script src="./scripts/form_contact.js"></script>
+    <script src="./scripts/gsap.js" defer></script>
+    <script src="./scripts/reveal.js" defer></script>
   </body>
-  <script src="./script.js"></script>
-  <script src="./scripts/toggleNav.js"></script>
-  <script src="./scripts/form_contact.js"></script>
-  <script src="./scripts/reveal.js" defer></script>
 </html>
