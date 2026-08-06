@@ -1,0 +1,15 @@
+.footerSvg-div {
+  background: var(--dark-blue2);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 8%;
+  background: var(--dark-blue);
+}
+footer > p {
+  color: var(--blue-text);
+  font-style: italic;
+  font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+}
