@@ -5,6 +5,7 @@
 @import url(./styles/sections/about.css);
 @import url(./styles/sections/projects.css);
 @import url(./styles/sections/contact.css);
+@import url(./styles/sections/footer.css);
 @import url(./styles/keyframes.css);
 
 * {
