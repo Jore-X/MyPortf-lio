@@ -79,6 +79,8 @@ header > * {
 }
 
 .cta-header-btn {
+  position: relative;
+  overflow: hidden;
   background: var(--gradient-button);
   max-width: 150px;
   width: 100%;
@@ -91,6 +93,26 @@ header > * {
   border-radius: 10px;
   aspect-ratio: 10/1;
   font-weight: 700;
+}
+.cta-header-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--shadow_cards_color);
+  filter: brightness(0.8);
+  left: 0;
+  border-radius: 0 50px 50px 0;
+  transition:
+    width 0.6s ease,
+    border-radius 0.6s ease;
+}
+.cta-header-btn:hover::before {
+  width: 100%;
+  border-radius: 0;
+}
+.cta-header-btn > i {
+  animation: point 0.7s infinite alternate ease-in;
 }
 
 /* __________________________________________________ */
