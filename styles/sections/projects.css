@@ -267,7 +267,7 @@
 .links-live,
 .links-repository {
   width: 40%;
-  min-width: 145px;
+  min-width: 141px;
   padding: 12px;
   gap: 5px;
   border-radius: 10px;
@@ -369,5 +369,16 @@
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
     view-timeline-inset: 20%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .links-live > i,
+  .links-repository > i {
+    display: none;
+  }
+  .links-live,
+  .links-repository {
+    min-width: 121px;
   }
 }

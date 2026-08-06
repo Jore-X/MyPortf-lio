@@ -65,7 +65,7 @@
 .text-home {
   max-width: 700px;
   flex-direction: column;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   padding: 0 0 16px 32px;
   position: relative;
   z-index: 2;
@@ -135,7 +135,6 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
 .hero-btns > :nth-child(1) {
   background: var(--gradient-button);
   width: 100%;
@@ -144,10 +143,14 @@
   border: 1px solid var(--floral-white);
   width: 80%;
   overflow: hidden;
+  transition: filter 1s ease;
 }
 .hero-btns > :nth-child(2) > * {
   z-index: 1;
   transition: color 0.6s ease;
+}
+.hero-btns > :nth-child(2):hover {
+  filter: drop-shadow(0 0 12px var(--floral-white-50));
 }
 .hero-btns > :nth-child(2):hover > * {
   color: var(--dark-blue);
