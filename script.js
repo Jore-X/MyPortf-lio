@@ -1,12 +1,18 @@
+// _______________________________________________________________________________
+// IMPORTS
+import "./scripts/component-scripts/header.js"
+import "./scripts/toggleNav.js"
+import "./scripts/form_contact.js"
+import "./scripts/reveal.js"
+import "./scripts/gsap.js"
+
+
+
+// _______________________________________________________________________________
 const about_card = document.querySelector(".about-card");
 const about_overlay = document.querySelector(".about-overlay");
 const about_overlay_p = document.querySelector(".about-overlay > p");
-// ______________________________
-const open_side_btn = document.querySelector(".open-btn");
-const close_side_btn = document.querySelector(".close-btn");
-const close_side_shadow = document.querySelector(".side-shadow-close");
-const side_menu = document.querySelector(".side-menu");
-const nav_side_links = document.querySelectorAll(".nav-aside-links > a");
+
 // _____________________________________________
 // Função para remover o historico de links <a>
 // ______________________________
@@ -32,25 +38,8 @@ about_overlay.addEventListener("click", () => {
 });
 // __________________________________________________
 
-open_side_btn.addEventListener("click", () => {
-  side_menu.classList.add("active");
-  close_side_shadow.classList.add("active");
-});
-close_side_btn.addEventListener("click", () => {
-  side_menu.classList.remove("active");
-  close_side_shadow.classList.remove("active");
-});
-close_side_shadow.addEventListener("click", () => {
-  side_menu.classList.remove("active");
-  close_side_shadow.classList.remove("active");
-});
-nav_side_links.forEach((links) => {
-  links.addEventListener("click", () => {
-    side_menu.classList.remove("active");
-    close_side_shadow.classList.remove("active");
-  });
-});
-
+// ________________________________________________________
+// SCRIPT CARDS
 // ________________________________________________________
 // Carrosel Script
 

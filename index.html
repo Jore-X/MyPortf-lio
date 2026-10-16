@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,76 +27,9 @@
     />
   </head>
   <body>
-    <header>
-      <div class="btn-and-logo-box">
-        <button class="open-btn"><i class="fa-solid fa-bars"></i></button>
-        <div class="header-logo">
-          <i class="fa-brands fa-codepen"></i>JoreCode
-        </div>
-      </div>
-      <nav id="navBarLinks">
-        <ul>
-          <li class="navLinks active">
-            <a href="#home">
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#services">
-              <span>Sobre</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#projects">
-              <span>Projetos</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#contact">
-              <span>Contato</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#contact" class="cta-header-btn"
-        >Fale Comigo<i class="fa-solid fa-arrow-right-from-bracket"></i
-      ></a>
-    </header>
+    <header id="header"></header>
     <div class="side-shadow-close"></div>
-    <aside class="side-menu">
-      <div class="header-logo mobile-logo">
-        <i class="fa-brands fa-codepen"></i>JoreCode
-      </div>
-      <button class="close-btn">Fechar</button>
-      <nav id="nav_side">
-        <ul>
-          <li class="nav-aside-links active">
-            <a href="#home"
-              ><i class="fa-regular fa-house"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#services"
-              ><i class="fa-regular fa-user"></i>
-              <span>Sobre</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#projects"
-              ><i class="fa-regular fa-folder-open"></i>
-              <span>Projetos</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#contact">
-              <i class="fa-regular fa-address-card"></i>
-              <span>Contato</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <aside id="aside" class="side-menu"></aside>
     <main>
       <!-- ______________________________________________________ -->
       <!-- ______________________________________________________ -->
@@ -186,12 +119,12 @@
                 loading="lazy"
               />
               <div class="contrast-text">Sobre mim</div>
-              <span
-                >Olá, <br />Me chamo <strong>Dheymerson Jore</strong>
-              </span>
+              <span>Olá, <br />Me chamo <strong>Dheymerson Jore</strong> </span>
             </div>
             <div class="about-card-text">
-              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I que despertou meu interesse e paixão pela área. Então, continuei a pesquisar e praticar por conta própria, testando, quebrando e
+              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I
+              que despertou meu interesse e paixão pela área. Então, continuei a
+              pesquisar e praticar por conta própria, testando, quebrando e
               construindo projetos reais.
               <br />
               <br />
@@ -536,10 +469,6 @@
     <footer>
       <p>&copy2025 Dheymerson Jore. Todos os Direitos Reservados.</p>
     </footer>
-    <script src="./script.js"></script>
-    <script src="./scripts/toggleNav.js"></script>
-    <script src="./scripts/form_contact.js"></script>
-    <script src="./scripts/gsap.js" defer></script>
-    <script src="./scripts/reveal.js" defer></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
