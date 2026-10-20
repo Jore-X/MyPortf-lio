@@ -45,25 +45,33 @@ async function dynamic_cards(data) {
   const template_cards = document.getElementById("project_card_page");
   const fragment = document.createDocumentFragment();
 
-  data.forEach((cards, index) => {
+  data.forEach((cards) => {
+    // Cria um clone do Template de Card criado no HTML
     const clone = template_cards.content.cloneNode(true);
 
     const title = clone.querySelector(".info > .title");
-    title.textContent = cards.title;
+    title.textContent = cards?.title;
 
     const img = clone.querySelector(".projects-img > img");
-    img.src = cards.image;
+    img.src = cards?.image;
 
     const technologies_box = clone.querySelector(".languages-block");
 
-    cards.technologies.forEach((element) => {
+    // ______________________________________________
+    cards?.technologies.forEach((element) => {
+      // Cria o span para mostrar as tecnologias usadas
       const new_technologie = document.createElement("span");
 
-      new_technologie.textContent = element.name;
-      new_technologie.classList.add(element.class);
+      // Usa os dados do JSON para definir as propriedades do elemento
+      new_technologie.textContent = element?.name;
+      new_technologie.style.backgroundColor = element?.colors[0]?.background;
+      new_technologie.style.color = element?.colors[1]?.color;
+      new_technologie.style.borderColor = element?.colors[1]?.color;
+      // _______________________________________________________________
 
       technologies_box.appendChild(new_technologie);
     });
+    // ______________________________________________
 
     fragment.appendChild(clone);
   });

@@ -96,17 +96,6 @@
   font-size: 0.85rem;
 }
 
-.languages-block > .css {
-  background: rgba(21, 115, 182, 0.3);
-  border-color: #63bdfd;
-  color: #63bdfd;
-}
-.languages-block > .js {
-  background: rgba(247, 222, 30, 0.3);
-  border-color: #f7df1e;
-  color: #f7df1e;
-}
-
 .projects-box-card > .click-expand {
   width: 100%;
   padding: 8px 14px;
