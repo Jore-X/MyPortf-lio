@@ -12,10 +12,10 @@
   gap: 4px;
   padding: 8px 24px;
 }
-.box-title-projects-page > .title{
+.box-title-projects-page > .title {
   font-size: 1.7rem;
 }
-.box-title-projects-page > .paragraph{
+.box-title-projects-page > .paragraph {
   font-size: 1rem;
   color: var(--white-50);
 }
@@ -29,6 +29,9 @@
 }
 
 .projects-box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -39,8 +42,6 @@
 
   backdrop-filter: blur(4px);
   border: 1px solid var(--white-30);
-
-  box-shadow: 0 0 15px 2px var(--white-10);
 
   transition: transform 0.6s ease;
 }
@@ -58,8 +59,8 @@
   height: 100%;
   pointer-events: none;
   /* box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8); */
-  background: rgba(250, 250, 250, 0.05);
-  box-shadow: inset 0 0 15px 5px var(--white-10);
+  background: rgba(250, 250, 250, 0.02);
+  box-shadow: inset 0 0 15px 5px rgba(250, 250, 250, 0.08);
   border-radius: var(--card-radius);
 }
 .projects-img {
@@ -74,7 +75,7 @@
   object-fit: cover;
 }
 
-.projects-box-card > .info > .resume {
+.projects-box-card > .info > .title {
   font-size: 1.3rem;
   padding: 0 10px;
 }
@@ -121,46 +122,3 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-
-/* .projects-box-card > img {
-  width: 100%;
-  z-index: -1;
-}
-
-.projects-box-card > .info {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  bottom: 0;
-  padding: 8px 12px;
-  backdrop-filter: blur(6px);
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-bottom: none;
-  border-radius: 20px 20px 0 0;
-}
-
-.languages-block {
-  padding: 0 2%;
-  gap: 8px;
-  display: flex;
-}
-.languages-block > span {
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 1.5px;
-  width: 100%;
-  max-width: 70px;
-  text-align: center;
-  border: 2px solid var(--indigo-eltrico-30);
-  color: var(--color-contrast);
-  padding: 4px 4%;
-}
-
-.projects-box-card .resume {
-  color: #fafafa;
-  filter: drop-shadow(0 0 25px #000);
-  font-weight: 600;
-  padding: 4px;
-} */

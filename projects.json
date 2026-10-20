@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Landing Page Pizzaria",
+    "details": "Site feito para pizzaria conquistar mais pedidos, com visual moderno, rápido e adaptado para celular.",
+    "image": "./assets/img/imagem-projetos/pizzaria-LP.webp",
+    "links": {
+      "live": "https://jore-x.github.io/Pizzaria-landing-page/",
+      "github": "https://github.com/Jore-X/Pizzaria-landing-page"
+    },
+    "technologies": [
+      { "name": "CSS", "class": "css" },
+      {
+        "name": "JS",
+        "class": "js"
+      }
+    ]
+  },
+  {
+    "title": "Site Institucional de Barbearia",
+    "details": "Site completo para barbearia, com vitrine de serviços, equipe, galeria e depoimentos, além de um fluxo de agendamento interativo em etapas, construído inteiramente em front-end, simulando toda a experiência de reserva (apenas simulação, não agenda)",
+    "image": "./assets/img/imagem-projetos/barbearia.webp",
+    "technologies": [
+      { "name": "CSS", "class": "css" },
+      {
+        "name": "JS",
+        "class": "js"
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Páginas Simples",
+    "details": "Ferramenta que gera páginas simples a partir de um prompt, usando Inteligência Artificial.",
+    "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
+    "technologies": [
+      { "name": "CSS", "class": "css" },
+      {
+        "name": "JS",
+        "class": "js"
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Animações CSS Simples",
+    "details": "Gerador de animações CSS prontas, criado com IA, para agilizar o trabalho de outros desenvolvedores.",
+    "image": "./assets/img/imagem-projetos/Ia-css-generate.webp",
+    "technologies": [
+      { "name": "CSS", "class": "css" },
+      {
+        "name": "JS",
+        "class": "js"
+      }
+    ]
+  },
+  {
+    "title": "Wiki Hollow Knight ",
+    "details": "Site de referência com a narrativa e os equipamentos de um jogo, organizado de forma clara e navegável.",
+    "image": "./assets/img/imagem-projetos/wiki-hollow-img.webp",
+    "technologies": [
+      { "name": "CSS", "class": "css" },
+      {
+        "name": "JS",
+        "class": "js"
+      }
+    ]
+  }
+]
