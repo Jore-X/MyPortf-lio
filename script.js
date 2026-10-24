@@ -122,19 +122,3 @@ for (let i = 0; i < carousels_list.length; i++) {
 }
 
 // _______________________________________
-//  SCRIPT PARA MOSTRAR O CARROSSEL Others
-const btn_show_others = document.querySelector(".btn-show-others");
-const box_cards = document.querySelector(".boxCards");
-const carousel_box = document.querySelectorAll(".carousels-box");
-
-btn_show_others.addEventListener("click", () => {
-  if (carousel_box[2].classList.contains("hide-others")) {
-    btn_show_others.textContent = "Esconder Outros"
-    carousel_box[2].classList.remove("hide-others");
-    box_cards.classList.remove("hide-others");
-  } else {
-    btn_show_others.textContent = "Mostrar Outros"
-    carousel_box[2].classList.add("hide-others");
-    box_cards.classList.add("hide-others");
-  }
-});
