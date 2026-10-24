@@ -89,11 +89,10 @@
   border: 1px solid #fafafa;
   background: rgba(250, 250, 250, 0.4);
   color: #fafafa;
-
   padding: 2px 8px;
   border-radius: 30px;
 
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .projects-box-card > .click-expand {

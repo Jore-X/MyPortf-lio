@@ -11,14 +11,14 @@
       {
         "name": "CSS",
         "colors": [
-          { "background": "rgba(21, 115, 182, 0.3)" },
+          { "background": "rgba(21, 115, 182, 0.2)" },
           { "color": "#63bdfd" }
         ]
       },
       {
         "name": "JS",
         "colors": [
-          { "background": "rgba(247, 222, 30, 0.3)" },
+          { "background": "rgba(247, 222, 30, 0.2)" },
           { "color": "#f7df1e" }
         ]
       }
@@ -32,14 +32,14 @@
       {
         "name": "CSS",
         "colors": [
-          { "background": "rgba(21, 115, 182, 0.3)" },
+          { "background": "rgba(21, 115, 182, 0.2)" },
           { "color": "#63bdfd" }
         ]
       },
       {
         "name": "JS",
         "colors": [
-          { "background": "rgba(247, 222, 30, 0.3)" },
+          { "background": "rgba(247, 222, 30, 0.2)" },
           { "color": "#f7df1e" }
         ]
       }
@@ -51,17 +51,17 @@
     "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
     "technologies": [
       {
-        "name": "CSS",
+        "name": "JS",
         "colors": [
-          { "background": "rgba(21, 115, 182, 0.3)" },
-          { "color": "#63bdfd" }
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
         ]
       },
       {
-        "name": "JS",
+        "name": "Groq API",
         "colors": [
-          { "background": "rgba(247, 222, 30, 0.3)" },
-          { "color": "#f7df1e" }
+          { "background": "rgba(244, 62, 1, 0.1)" },
+          { "color": "#F43E01" }
         ]
       }
     ]
@@ -72,16 +72,86 @@
     "image": "./assets/img/imagem-projetos/Ia-css-generate.webp",
     "technologies": [
       {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      },
+      {
+        "name": "Groq API",
+        "colors": [
+          { "background": "rgba(244, 62, 1, 0.1)" },
+          { "color": "#F43E01" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Encurtador de Links",
+    "details": "",
+    "image": "./assets/img/imagem-projetos/shortLinks.webp",
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      },
+      {
+        "name": "Supabase",
+        "colors": [
+          { "background": "rgba(0, 197, 115, 0.2)" },
+          { "color": "#00c573" }
+        ]
+      },
+      {
+        "name": "Cloudflare",
+        "colors": [
+          { "background": "rgba(243, 127, 32, 0.2)" },
+          { "color": "#F38020" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerenciador de Extensões de Navegador",
+    "details": "",
+    "image": "./assets/img/imagem-projetos/browser_extensions_manager.webp",
+    "technologies": [
+      {
         "name": "CSS",
         "colors": [
-          { "background": "rgba(21, 115, 182, 0.3)" },
+          { "background": "rgba(21, 115, 182, 0.2)" },
           { "color": "#63bdfd" }
         ]
       },
       {
         "name": "JS",
         "colors": [
-          { "background": "rgba(247, 222, 30, 0.3)" },
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerador e Validador de CPF",
+    "details": "",
+    "image": "./assets/img/imagem-projetos/gerador_de_cpf.webp",
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
           { "color": "#f7df1e" }
         ]
       }
@@ -95,14 +165,14 @@
       {
         "name": "CSS",
         "colors": [
-          { "background": "rgba(21, 115, 182, 0.3)" },
+          { "background": "rgba(21, 115, 182, 0.2)" },
           { "color": "#63bdfd" }
         ]
       },
       {
         "name": "JS",
         "colors": [
-          { "background": "rgba(247, 222, 30, 0.3)" },
+          { "background": "rgba(247, 222, 30, 0.2)" },
           { "color": "#f7df1e" }
         ]
       }
