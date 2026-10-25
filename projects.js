@@ -16,13 +16,8 @@ document.addEventListener("headerLoaded", () => {
   document.querySelector(".cta-header-btn > span").textContent = "Voltar";
   const cta_header_btn = document.querySelector(".cta-header-btn");
 
-  // Remove o Link href do botão
-  cta_header_btn.removeAttribute("href");
-
-  // Redireciona para voltar pro index Home devolta
-  cta_header_btn.addEventListener("click", () => {
-    window.location.href = "./index.html";
-  });
+  // troca o Link href do botão
+  cta_header_btn.href = "./index.html";
 });
 
 // _______________________________________________________________________________
@@ -72,6 +67,46 @@ async function dynamic_cards(data) {
       technologies_box.appendChild(new_technologie);
     });
     // ______________________________________________
+    const details_p = clone.querySelector(".details-p");
+    const details_link_live = clone.querySelector(".details-btns > .live");
+    const details_link_github = clone.querySelector(".details-btns > .github");
+
+    details_p.textContent = cards?.details;
+    details_link_live.href = cards?.links?.live;
+    details_link_github.href = cards?.links?.github;
+
+    // ______________________________________________________________
+    // Para cuidar do estado de ativo apos clicar no card
+    const details_box = clone.querySelector(".details-info");
+    const projects_card = clone.querySelector(".projects-box-card");
+    const expand_btn = clone.querySelector(".click-expand");
+    // const expand_btn_span = clone.querySelector(".click-expand > span");
+
+    expand_btn.addEventListener("click", () => {
+      if (projects_card.classList.contains("active")) {
+        details_box.classList.remove("active");
+        projects_card.classList.remove("active");
+
+        // expand_btn_span.textContent = "Clique aqui para expandir";
+      } else {
+        // ________________________________________________
+        // para remover a classe de todos ao expandir outro
+        const all_details_box = document.querySelectorAll(".details-info");
+        const all_projects_card =
+          document.querySelectorAll(".projects-box-card");
+        // ________________________________
+        for (let i = 0; i < all_projects_card.length; i++) {
+          all_details_box[i].classList.remove("active");
+          all_projects_card[i].classList.remove("active");
+        }
+        
+        details_box.classList.add("active");
+        projects_card.classList.add("active");
+        
+        // expand_btn_span.textContent = "Clique aqui para minimizar";
+      }
+      // ______________________________________________________________
+    });
 
     fragment.appendChild(clone);
   });

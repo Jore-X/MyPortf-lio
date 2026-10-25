@@ -1,7 +1,7 @@
 [
   {
     "title": "Landing Page Pizzaria",
-    "details": "Site feito para pizzaria conquistar mais pedidos, com visual moderno, rápido e adaptado para celular.",
+    "details": "Site para pizzaria conquistar mais pedidos, com visual moderno, rápido e adaptado para celular.",
     "image": "./assets/img/imagem-projetos/pizzaria-LP.webp",
     "links": {
       "live": "https://jore-x.github.io/Pizzaria-landing-page/",
@@ -26,7 +26,7 @@
   },
   {
     "title": "Site Institucional de Barbearia",
-    "details": "Site completo para barbearia, com vitrine de serviços, equipe, galeria e depoimentos, além de um fluxo de agendamento interativo em etapas, construído inteiramente em front-end, simulando toda a experiência de reserva (apenas simulação, não agenda)",
+    "details": "Site para barbearia divulgar serviços e permitir o agendamento de horários.",
     "image": "./assets/img/imagem-projetos/barbearia.webp",
     "technologies": [
       {
@@ -89,7 +89,7 @@
   },
   {
     "title": "Encurtador de Links",
-    "details": "",
+    "details": "Encurtador de URLs para transformar links longos em endereços curtos e facilitar o compartilhamento.",
     "image": "./assets/img/imagem-projetos/shortLinks.webp",
     "technologies": [
       {
@@ -117,7 +117,7 @@
   },
   {
     "title": "Gerenciador de Extensões de Navegador",
-    "details": "",
+    "details": "Interface para visualizar, filtrar, ativar, desativar e remover extensões do navegador.",
     "image": "./assets/img/imagem-projetos/browser_extensions_manager.webp",
     "technologies": [
       {
@@ -137,8 +137,29 @@
     ]
   },
   {
+    "title": "Links Sociais de Perfil",
+    "details": "Perfil de links sociais para reunir e compartilhar redes sociais em uma página moderna e responsiva.",
+    "image": "./assets/img/imagem-projetos/social_links_profile.webp",
+    "technologies": [
+      {
+        "name": "HTML",
+        "colors": [
+          { "background": "rgba(227, 76, 38, 0.2)" },
+          { "color": "#E34C26" }
+        ]
+      },
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      }
+    ]
+  },
+  {
     "title": "Gerador e Validador de CPF",
-    "details": "",
+    "details": "Ferramenta para gerar CPFs para testes e validar números informados, com interface responsiva.",
     "image": "./assets/img/imagem-projetos/gerador_de_cpf.webp",
     "technologies": [
       {
