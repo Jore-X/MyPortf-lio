@@ -79,15 +79,13 @@ async function dynamic_cards(data) {
     // Para cuidar do estado de ativo apos clicar no card
     const details_box = clone.querySelector(".details-info");
     const projects_card = clone.querySelector(".projects-box-card");
+    const overlay_click = clone.querySelector(".overlay-click");
     const expand_btn = clone.querySelector(".click-expand");
-    // const expand_btn_span = clone.querySelector(".click-expand > span");
 
     expand_btn.addEventListener("click", () => {
       if (projects_card.classList.contains("active")) {
         details_box.classList.remove("active");
         projects_card.classList.remove("active");
-
-        // expand_btn_span.textContent = "Clique aqui para expandir";
       } else {
         // ________________________________________________
         // para remover a classe de todos ao expandir outro
@@ -99,13 +97,15 @@ async function dynamic_cards(data) {
           all_details_box[i].classList.remove("active");
           all_projects_card[i].classList.remove("active");
         }
-        
+        // ________________________________
+
         details_box.classList.add("active");
         projects_card.classList.add("active");
-        
-        // expand_btn_span.textContent = "Clique aqui para minimizar";
       }
       // ______________________________________________________________
+    });
+    overlay_click.addEventListener("click", () => {
+      expand_btn.click();
     });
 
     fragment.appendChild(clone);

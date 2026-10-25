@@ -80,6 +80,17 @@
   transform: scale(1.03);
   z-index: 10;
 }
+
+.projects-box-card.active > .overlay-click {
+  pointer-events: none;
+}
+
+.overlay-click {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
 /* _______________________________________________ */
 /* Estilização das imagens dos cards */
 .projects-img {
@@ -97,7 +108,7 @@
 /* _______________________________________________ */
 /* titulo dos cards */
 .projects-box-card > .info > .title {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   padding: 0 10px;
 }
 /* _______________________________________________ */
@@ -117,9 +128,6 @@
   font-size: 0.8rem;
 }
 
-.click-expand {
-  cursor: pointer;
-}
 /* _______________________________________________ */
 /* Estilização das informações dos cards expandidos */
 .details-info {
@@ -141,6 +149,10 @@
 
   overflow: hidden;
   min-height: 0;
+}
+
+.details-p {
+  font-size: 0.9rem;
 }
 
 .details-btns {
@@ -183,10 +195,32 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  position: relative;
+  cursor: pointer;
+  min-height: 30px;
 }
-.projects-box-card > .click-expand > span {
+.projects-box-card > .click-expand > * > span {
   font-size: 0.9rem;
   letter-spacing: 1px;
+}
+
+.click-expand > * {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: opacity 0.3s ease;
+}
+
+.projects-box-card.active > .click-expand > .expand,
+.click-expand > .minimize {
+  opacity: 0;
+}
+.projects-box-card.active > .click-expand > .minimize {
+  opacity: 1;
 }
 /* _______________________________________________ */
