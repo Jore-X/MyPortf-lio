@@ -160,7 +160,7 @@
           <div class="carousels-box cL">
             <h2 class="carousel-title">Sites Institucionais & Landing Pages</h2>
             <div class="carousel">
-              <div class="projects-divs carousel-LPs active">
+              <div class="projects-divs carousel-LPs">
                 <div class="cards">
                   <img
                     class="imgCards"
@@ -199,7 +199,7 @@
                   </a>
                 </div>
               </div>
-              <div class="projects-divs carousel-LPs next-card">
+              <div class="projects-divs carousel-LPs">
                 <div class="cards">
                   <img
                     class="imgCards"
@@ -252,7 +252,7 @@
           <div class="carousels-box cR">
             <h2 class="carousel-title">Sites que utilizam IA</h2>
             <div class="carousel">
-              <div class="projects-divs carousel-IAs active">
+              <div class="projects-divs carousel-IAs">
                 <div class="cards">
                   <img
                     class="imgCards"
@@ -291,7 +291,7 @@
                   </a>
                 </div>
               </div>
-              <div class="projects-divs carousel-IAs next-card">
+              <div class="projects-divs carousel-IAs">
                 <div class="cards">
                   <img
                     class="imgCards"
@@ -411,6 +411,36 @@
         </div>
       </section>
     </main>
+    <!-- __________________________________________________________________ -->
+    <!-- TEMPLATES -->
+    <template id="card_carrousel_template">
+      <div class="projects-divs carousel-LPs active">
+        <div class="cards">
+          <img
+            class="imgCards"
+            src=""
+            alt="Captura de tela do Site"
+            loading="lazy"
+          />
+        </div>
+        <div class="caption-cards">
+          <div class="caption-cards-title"></div>
+          <div class="caption-languages-div"></div>
+        </div>
+        <div class="info-cards"></div>
+        <div class="project-links-box">
+          <a href="" class="links-live" target="_blank">
+            <i class="fa-solid fa-display"></i>
+            Ver ao vivo
+          </a>
+          <a href="" class="links-repository">
+            <i class="fa-brands fa-github"></i>
+            Repositório
+          </a>
+        </div>
+      </div>
+    </template>
+    <!-- __________________________________________________________________ -->
     <div class="wavesSvg footerSvg-div">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 165 1440 117.3">
         <path

@@ -23,12 +23,14 @@ document.addEventListener("headerLoaded", () => {
 // _______________________________________________________________________________
 // IMPLEMENTAÇÃO DINÂMICA DOS PROJETOS
 
-async function load_projects() {
+export async function load_projects() {
   try {
     const response = await fetch("./projects.json");
     const data = await response.json();
 
-    dynamic_cards(data);
+    // dynamic_cards(data);
+
+    return data;
   } catch (error) {
     console.log("Erro ao carregar arquivo JSON: ", error);
     return;
@@ -36,6 +38,9 @@ async function load_projects() {
 }
 
 async function dynamic_cards(data) {
+  if (!data) {
+    return;
+  }
   const container = document.querySelector(".projects-page-grid");
   const template_cards = document.getElementById("project_card_page");
   const fragment = document.createDocumentFragment();
@@ -113,4 +118,8 @@ async function dynamic_cards(data) {
   container.appendChild(fragment);
 }
 
-load_projects();
+if (document.querySelector(".projects-page")) {
+  (async () => {
+    dynamic_cards(await load_projects());
+  })();
+}
