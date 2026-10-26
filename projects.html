@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/pages/project_page.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <link rel="shortcut icon" href="./assets/img/icons/joreCode-icon.ico" />
+    <title>Página de Projetos</title>
+  </head>
+  <body class="projects-page">
+    <!-- ______________________________________________________ -->
+    <!-- ______________________________________________________ -->
+    <!-- From Uiverse.io by sinful_9361 -->
+    <div class="container">
+      <div id="starsBg"></div>
+      <div id="starsBg2"></div>
+      <div id="starsBg3"></div>
+      <div></div>
+    </div>
+    <!-- ______________________________________________________ -->
+    <!-- ______________________________________________________ -->
+
+    <header id="header"></header>
+    <div class="side-shadow-close"></div>
+    <aside id="aside" class="side-menu"></aside>
+
+    <div class="box-title-projects-page">
+      <h1 class="title">Meus Projetos</h1>
+      <p class="paragraph">Clique em qualquer card para expandir</p>
+    </div>
+
+    <template id="project_card_page">
+      <div class="grid-item">
+        <div class="projects-box-card">
+          <div class="projects-img">
+            <img src="" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title"></h2>
+            <div class="languages-block"></div>
+          </div>
+          <div class="details-info">
+            <div class="details-item">
+              <p class="details-p"></p>
+              <div class="details-btns">
+                <a href="" class="live" target="_blank">
+                  <i class="fa-solid fa-display"></i>
+                  <span>Ver ao vivo</span>
+                </a>
+                <a href="" class="github">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Repositório</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="overlay-click"></div>
+          <div class="click-expand">
+            <div class="expand">
+              <span>Clique aqui para expandir</span>
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+            <div class="minimize">
+              <span>Clique aqui para minimizar</span>
+              <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <main class="projects-page-grid"></main>
+
+    <script type="module" src="./projects.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+[
+  {
+    "title": "Landing Page Pizzaria",
+    "details": "Site para pizzaria conquistar mais pedidos, com visual moderno, rápido e adaptado para celular.",
+    "image": "./assets/img/imagem-projetos/pizzaria-LP.webp",
+    "links": {
+      "live": "https://jore-x.github.io/Pizzaria-landing-page/",
+      "github": "https://github.com/Jore-X/Pizzaria-landing-page"
+    },
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Site Institucional de Barbearia",
+    "details": "Site para barbearia divulgar serviços e permitir o agendamento de horários.",
+    "image": "./assets/img/imagem-projetos/barbearia.webp",
+    "links": {
+      "live": "https://barbearia-seven-cyan.vercel.app/",
+      "github": "https://github.com/Jore-X/Barbearia"
+    },
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Páginas Simples",
+    "details": "Ferramenta que gera páginas simples a partir de um prompt, usando Inteligência Artificial.",
+    "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
+    "links": {
+      "live": "https://gerador-de-sites-com-ia.vercel.app/",
+      "github": "https://github.com/Jore-X/Gerador-de-Sites-com-IA"
+    },
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      },
+      {
+        "name": "Groq API",
+        "colors": [
+          { "background": "rgba(244, 62, 1, 0.1)" },
+          { "color": "#F43E01" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Animações CSS",
+    "details": "Gerador de animações CSS prontas, criado com IA, para agilizar o trabalho de outros desenvolvedores.",
+    "image": "./assets/img/imagem-projetos/Ia-css-generate.webp",
+    "links": {
+      "live": "https://ia-css-generator.vercel.app/",
+      "github": "https://github.com/Jore-X/IA-Css-Generator"
+    },
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      },
+      {
+        "name": "Groq API",
+        "colors": [
+          { "background": "rgba(244, 62, 1, 0.1)" },
+          { "color": "#F43E01" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Encurtador de Links",
+    "details": "Encurtador de URLs para transformar links longos em endereços curtos e facilitar o compartilhamento.",
+    "image": "./assets/img/imagem-projetos/shortLinks.webp",
+    "links": {
+      "live": "https://shortlinks-2vs.pages.dev/",
+      "github": "https://github.com/Jore-X/shortlinks"
+    },
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      },
+      {
+        "name": "Supabase",
+        "colors": [
+          { "background": "rgba(0, 197, 115, 0.2)" },
+          { "color": "#00c573" }
+        ]
+      },
+      {
+        "name": "Cloudflare",
+        "colors": [
+          { "background": "rgba(243, 127, 32, 0.2)" },
+          { "color": "#F38020" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerenciador de Extensões de Navegador",
+    "details": "Interface para visualizar, filtrar, ativar, desativar e remover extensões do navegador.",
+    "image": "./assets/img/imagem-projetos/browser_extensions_manager.webp",
+    "links": {
+      "live": "https://jore-x.github.io/browser-extensions-manager-ui/",
+      "github": "https://github.com/Jore-X/browser-extensions-manager-ui"
+    },
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Links Sociais de Perfil",
+    "details": "Perfil de links sociais para reunir e compartilhar redes sociais em uma página moderna e responsiva.",
+    "image": "./assets/img/imagem-projetos/social_links_profile.webp",
+    "links": {
+      "live": "https://jore-x.github.io/social-links-profile/",
+      "github": "https://github.com/Jore-X/social-links-profile"
+    },
+    "technologies": [
+      {
+        "name": "HTML",
+        "colors": [
+          { "background": "rgba(227, 76, 38, 0.2)" },
+          { "color": "#E34C26" }
+        ]
+      },
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gerador e Validador de CPF",
+    "details": "Ferramenta para gerar CPFs para testes e validar números informados, com interface responsiva.",
+    "image": "./assets/img/imagem-projetos/gerador_de_cpf.webp",
+    "links": {
+      "live": "https://cpfcerto.netlify.app/",
+      "github": "https://github.com/Jore-X/gerador-cpf-cnpj"
+    },
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wiki Hollow Knight ",
+    "details": "Site de referência com a narrativa e os equipamentos de um jogo, organizado de forma clara e navegável.",
+    "image": "./assets/img/imagem-projetos/wiki-hollow-img.webp",
+    "links": {
+      "live": "https://jore-x.github.io/Hollow/",
+      "github": "https://github.com/Jore-X/Hollow"
+    },
+    "technologies": [
+      {
+        "name": "CSS",
+        "colors": [
+          { "background": "rgba(21, 115, 182, 0.2)" },
+          { "color": "#63bdfd" }
+        ]
+      },
+      {
+        "name": "JS",
+        "colors": [
+          { "background": "rgba(247, 222, 30, 0.2)" },
+          { "color": "#f7df1e" }
+        ]
+      }
+    ]
+  }
+]
