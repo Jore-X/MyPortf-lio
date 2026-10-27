@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,76 +27,9 @@
     />
   </head>
   <body>
-    <header>
-      <div class="btn-and-logo-box">
-        <button class="open-btn"><i class="fa-solid fa-bars"></i></button>
-        <div class="header-logo">
-          <i class="fa-brands fa-codepen"></i>JoreCode
-        </div>
-      </div>
-      <nav id="navBarLinks">
-        <ul>
-          <li class="navLinks active">
-            <a href="#home">
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#services">
-              <span>Sobre</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#projects">
-              <span>Projetos</span>
-            </a>
-          </li>
-          <li class="navLinks">
-            <a href="#contact">
-              <span>Contato</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#contact" class="cta-header-btn"
-        >Fale Comigo<i class="fa-solid fa-arrow-right-from-bracket"></i
-      ></a>
-    </header>
+    <header id="header"></header>
     <div class="side-shadow-close"></div>
-    <aside class="side-menu">
-      <div class="header-logo mobile-logo">
-        <i class="fa-brands fa-codepen"></i>JoreCode
-      </div>
-      <button class="close-btn">Fechar</button>
-      <nav id="nav_side">
-        <ul>
-          <li class="nav-aside-links active">
-            <a href="#home"
-              ><i class="fa-regular fa-house"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#services"
-              ><i class="fa-regular fa-user"></i>
-              <span>Sobre</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#projects"
-              ><i class="fa-regular fa-folder-open"></i>
-              <span>Projetos</span>
-            </a>
-          </li>
-          <li class="nav-aside-links">
-            <a href="#contact">
-              <i class="fa-regular fa-address-card"></i>
-              <span>Contato</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <aside id="aside" class="side-menu"></aside>
     <main>
       <!-- ______________________________________________________ -->
       <!-- ______________________________________________________ -->
@@ -186,12 +119,12 @@
                 loading="lazy"
               />
               <div class="contrast-text">Sobre mim</div>
-              <span
-                >Olá, <br />Me chamo <strong>Dheymerson Jore</strong>
-              </span>
+              <span>Olá, <br />Me chamo <strong>Dheymerson Jore</strong> </span>
             </div>
             <div class="about-card-text">
-              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I que despertou meu interesse e paixão pela área. Então, continuei a pesquisar e praticar por conta própria, testando, quebrando e
+              Comecei a programar há mais de 6 meses, quando fiz um curso de T.I
+              que despertou meu interesse e paixão pela área. Então, continuei a
+              pesquisar e praticar por conta própria, testando, quebrando e
               construindo projetos reais.
               <br />
               <br />
@@ -223,92 +156,10 @@
       </div>
       <section id="projects" class="sections">
         <h1 id="h1Projects">PRINCIPAIS PROJETOS</h1>
-        <div class="boxCards hide-others">
+        <div class="boxCards">
           <div class="carousels-box cL">
             <h2 class="carousel-title">Sites Institucionais & Landing Pages</h2>
-            <div class="carousel">
-              <div class="projects-divs carousel-LPs active">
-                <div class="cards">
-                  <img
-                    class="imgCards"
-                    src="./assets/img/imagem-projetos/pizzaria-LP.webp"
-                    alt="Captura de tela do Site"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="caption-cards">
-                  <div class="caption-cards-title">Projeto de estudos</div>
-                  <div class="caption-languages-div">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                  </div>
-                </div>
-                <div class="info-cards">
-                  Site feito para pizzaria conquistar mais pedidos, com visual
-                  moderno, rápido e adaptado para celular.
-                </div>
-                <div class="project-links-box">
-                  <a
-                    href="https://jore-x.github.io/Pizzaria-landing-page/"
-                    class="links-live"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-display"></i>
-                    Ver ao vivo
-                  </a>
-                  <a
-                    href="https://github.com/Jore-X/Pizzaria-landing-page"
-                    class="links-repository"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-              <div class="projects-divs carousel-LPs next-card">
-                <div class="cards">
-                  <img
-                    class="imgCards"
-                    src="./assets/img/imagem-projetos/barbearia.webp"
-                    alt="Captura de tela do Site"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="caption-cards">
-                  <div class="caption-cards-title">Projeto de estudos</div>
-                  <div class="caption-languages-div">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                  </div>
-                </div>
-                <div class="info-cards">
-                  Site completo para barbearia, com vitrine de serviços, equipe,
-                  galeria e depoimentos, além de um fluxo de agendamento
-                  interativo em etapas, construído inteiramente em front-end,
-                  simulando toda a experiência de reserva (apenas simulação, não
-                  agenda)
-                </div>
-                <div class="project-links-box">
-                  <a
-                    class="links-live"
-                    href="https://barbearia-seven-cyan.vercel.app/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-display"></i>
-                    Ver ao vivo
-                  </a>
-                  <a
-                    href="https://github.com/Jore-X/Barbearia"
-                    class="links-repository"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </div>
+            <div class="carousel"></div>
             <button class="btn-back-card-LPs btns-card disable">
               <i class="fa-solid fa-angle-left"></i>
             </button>
@@ -317,87 +168,8 @@
             </button>
           </div>
           <div class="carousels-box cR">
-            <h2 class="carousel-title">Sites que utilizam IA</h2>
-            <div class="carousel">
-              <div class="projects-divs carousel-IAs active">
-                <div class="cards">
-                  <img
-                    class="imgCards"
-                    src="./assets/img/imagem-projetos/gerador-de-sites.webp"
-                    alt="Captura de tela do Site"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="caption-cards">
-                  <div class="caption-cards-title">Projeto de estudos</div>
-                  <div class="caption-languages-div">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                  </div>
-                </div>
-                <div class="info-cards">
-                  Ferramenta que gera páginas simples a partir de um prompt,
-                  usando Inteligência Artificial.
-                </div>
-                <div class="project-links-box">
-                  <a
-                    class="links-live"
-                    href="https://gerador-de-sites-com-ia.vercel.app/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-display"></i>
-                    Ver ao vivo
-                  </a>
-                  <a
-                    href="https://github.com/Jore-X/Gerador-de-Sites-com-IA"
-                    class="links-repository"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-              <div class="projects-divs carousel-IAs next-card">
-                <div class="cards">
-                  <img
-                    class="imgCards"
-                    src="./assets/img/imagem-projetos/Ia-css-generate.webp"
-                    alt="Captura de tela do Site"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="caption-cards">
-                  <div class="caption-cards-title">Projeto de estudos</div>
-                  <div class="caption-languages-div">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                  </div>
-                </div>
-                <div class="info-cards">
-                  Gerador de animações CSS prontas, criado com IA, para agilizar
-                  o trabalho de outros desenvolvedores.
-                </div>
-                <div class="project-links-box">
-                  <a
-                    class="links-live"
-                    href="https://ia-css-generator.vercel.app"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-display"></i>
-                    Ver ao vivo
-                  </a>
-                  <a
-                    href="https://github.com/Jore-X/IA-Css-Generator"
-                    class="links-repository"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </div>
+            <h2 class="carousel-title">Ferramentas Web</h2>
+            <div class="carousel"></div>
             <button class="btn-back-card-IAs btns-card disable">
               <i class="fa-solid fa-angle-left"></i>
             </button>
@@ -405,56 +177,10 @@
               <i class="fa-solid fa-angle-right"></i>
             </button>
           </div>
-          <div class="carousels-box hide-others">
-            <h2 class="carousel-title">Outros</h2>
-            <div class="carousel">
-              <div class="projects-divs carousel-others active">
-                <div class="cards">
-                  <img
-                    class="imgCards"
-                    src="./assets/img/imagem-projetos/wiki-hollow-img.webp"
-                    alt="Captura de tela do Site"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="caption-cards">
-                  <div class="caption-cards-title">Projeto Pessoal</div>
-                  <div class="caption-languages-div">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                  </div>
-                </div>
-                <div class="info-cards">
-                  Site de referência com a narrativa e os equipamentos de um
-                  jogo, organizado de forma clara e navegável.
-                </div>
-                <div class="project-links-box">
-                  <a
-                    class="links-live"
-                    href="https://jore-x.github.io/Hollow/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-display"></i>
-                    Ver ao vivo
-                  </a>
-                  <a
-                    href="https://github.com/Jore-X/Hollow"
-                    class="links-repository"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </div>
-            <button class="btn-back-card-others btns-card disable">
-              <i class="fa-solid fa-angle-left"></i>
-            </button>
-            <button class="btn-next-card-others btns-card disable">
-              <i class="fa-solid fa-angle-right"></i>
-            </button>
-          </div>
-          <div class="btn-show-others">Mostrar Outros</div>
+          <a href="./projects.html" class="btn-show-others">
+            <span>Ver Todos</span>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </section>
       <div class="wavesSvg">
@@ -524,6 +250,36 @@
         </div>
       </section>
     </main>
+    <!-- __________________________________________________________________ -->
+    <!-- TEMPLATES -->
+    <template id="card_carrousel_template">
+      <div class="projects-divs">
+        <div class="cards">
+          <img
+            class="imgCards"
+            src=""
+            alt="Captura de tela do Site"
+            loading="lazy"
+          />
+        </div>
+        <div class="caption-cards">
+          <div class="caption-cards-title"></div>
+          <div class="caption-languages-div"></div>
+        </div>
+        <div class="info-cards"></div>
+        <div class="project-links-box">
+          <a href="" class="links-live" target="_blank">
+            <i class="fa-solid fa-display"></i>
+            Ver ao vivo
+          </a>
+          <a href="" class="links-repository">
+            <i class="fa-brands fa-github"></i>
+            Repositório
+          </a>
+        </div>
+      </div>
+    </template>
+    <!-- __________________________________________________________________ -->
     <div class="wavesSvg footerSvg-div">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 165 1440 117.3">
         <path
@@ -536,10 +292,6 @@
     <footer>
       <p>&copy2025 Dheymerson Jore. Todos os Direitos Reservados.</p>
     </footer>
-    <script src="./script.js"></script>
-    <script src="./scripts/toggleNav.js"></script>
-    <script src="./scripts/form_contact.js"></script>
-    <script src="./scripts/gsap.js" defer></script>
-    <script src="./scripts/reveal.js" defer></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

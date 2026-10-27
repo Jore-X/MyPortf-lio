@@ -214,6 +214,7 @@
   .about-overlay {
     display: flex;
     width: 100%;
+    min-height: 35px;
     justify-content: center;
     position: absolute;
     z-index: 1;

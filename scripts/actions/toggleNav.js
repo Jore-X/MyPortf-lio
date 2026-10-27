@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("headerLoaded", function () {
   const sections = document.querySelectorAll(".sections"); // ajuste o seletor se necessário
   const navLinks = document.querySelectorAll(".navLinks"); // ajuste o seletor conforme seu HTML
   const navSideLinks = document.querySelectorAll(".nav-aside-links"); // ajuste o seletor conforme seu HTML
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Remove a classe 'active' de todos os links
       navLinks.forEach((link) => link.classList.remove("active"));
       navSideLinks.forEach((link) => link.classList.remove("active"));
+      
       navLinks[activeSectionIndex].classList.add("active");
       navSideLinks[activeSectionIndex].classList.add("active");
     }
