@@ -1,41 +1,30 @@
 // _______________________________________________________________________________
 // IMPORTS
-import "./scripts/component-scripts/header.js";
+import "../component-scripts/header.js";
 // _______________________________________________________________________________
 
-document.addEventListener("headerLoaded", () => {
-  const nav_links = document.querySelectorAll(".navLinks, .nav-aside-links");
-
-  // Esconder links de navegação na pagina de projetos
-  nav_links.forEach((element) => {
-    element.style.display = "none";
-  });
-  //_________________________________________
-
-  // Modificar o botão e sua referencia
-  document.querySelector(".cta-header-btn > span").textContent = "Voltar";
-  const cta_header_btn = document.querySelector(".cta-header-btn");
-
-  // troca o Link href do botão
-  cta_header_btn.href = "./index.html";
-});
-
 // _______________________________________________________________________________
-// IMPLEMENTAÇÃO DINÂMICA DOS PROJETOS
-
-async function load_projects() {
+// FUNÇÃO QUE CARREGA O JSON
+export async function load_projects() {
   try {
     const response = await fetch("./projects.json");
     const data = await response.json();
 
-    dynamic_cards(data);
+    // dynamic_cards(data);
+
+    return data;
   } catch (error) {
     console.log("Erro ao carregar arquivo JSON: ", error);
     return;
   }
 }
 
+// _______________________________________________________________________________
+// IMPLEMENTAÇÃO DINÂMICA DOS PROJETOS
 async function dynamic_cards(data) {
+  if (!data) {
+    return;
+  }
   const container = document.querySelector(".projects-page-grid");
   const template_cards = document.getElementById("project_card_page");
   const fragment = document.createDocumentFragment();
@@ -59,9 +48,9 @@ async function dynamic_cards(data) {
 
       // Usa os dados do JSON para definir as propriedades do elemento
       new_technologie.textContent = element?.name;
-      new_technologie.style.backgroundColor = element?.colors[0]?.background;
-      new_technologie.style.color = element?.colors[1]?.color;
-      new_technologie.style.borderColor = element?.colors[1]?.color;
+      new_technologie.style.backgroundColor = element?.colors?.background;
+      new_technologie.style.color = element?.colors?.color;
+      new_technologie.style.borderColor = element?.colors?.color;
       // _______________________________________________________________
 
       technologies_box.appendChild(new_technologie);
@@ -113,4 +102,30 @@ async function dynamic_cards(data) {
   container.appendChild(fragment);
 }
 
-load_projects();
+// Só executa se esse elemento existir na página.
+// adicionei isso pois ao importar a função de carregar o JSON no script principal
+// ele executa o js inteiro contido aqui, gerando um erro de elemento null
+if (document.querySelector(".projects-page")) {
+  // Só executa quando o event headerLoaded for lançado
+  document.addEventListener("headerLoaded", () => {
+    const nav_links = document.querySelectorAll(".navLinks, .nav-aside-links");
+
+    // Esconder links de navegação na pagina de projetos
+    nav_links.forEach((element) => {
+      element.style.display = "none";
+    });
+    //_________________________________________
+
+    // Modificar o botão e sua referencia
+    document.querySelector(".cta-header-btn > span").textContent = "Voltar";
+    const cta_header_btn = document.querySelector(".cta-header-btn");
+
+    // troca o Link href do botão
+    cta_header_btn.href = "./index.html";
+  });
+
+  // Para usar função async diretamente sem precisar criar uma função nova
+  (async () => {
+    dynamic_cards(await load_projects());
+  })();
+}

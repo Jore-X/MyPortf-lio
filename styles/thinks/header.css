@@ -1,7 +1,9 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 99;
+  /* o aside deve ficar na frente ainda */
+  z-index: 98;
+  /* ___ */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -147,7 +149,9 @@ header > * {
   padding: 8px;
   border-radius: 0 20px 20px 0;
   box-shadow: 4px 0 15px var(--background-contrast);
-  z-index: 10;
+  /* o header ainda deve ficar atras */
+  z-index: 99;
+  /* __ */
   top: 0;
   left: -185px;
   display: flex;

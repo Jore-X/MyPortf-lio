@@ -47,7 +47,7 @@ fetch("components/header.html")
             close_side_shadow.classList.remove("active");
           });
         });
-        
+
         document.dispatchEvent(new Event("headerLoaded"));
       });
   })
