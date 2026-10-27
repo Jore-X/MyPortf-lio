@@ -11,17 +11,17 @@
     "technologies": [
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       },
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       }
     ]
   },
@@ -37,69 +37,17 @@
     "technologies": [
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       },
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Gerador de Páginas Simples",
-    "details": "Ferramenta que gera páginas simples a partir de um prompt, usando Inteligência Artificial.",
-    "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
-    "category": "ferramenta web",
-    "links": {
-      "live": "https://gerador-de-sites-com-ia.vercel.app/",
-      "github": "https://github.com/Jore-X/Gerador-de-Sites-com-IA"
-    },
-    "technologies": [
-      {
-        "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
-      },
-      {
-        "name": "Groq API",
-        "colors": [
-          { "background": "rgba(244, 62, 1, 0.1)" },
-          { "color": "#F43E01" }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Gerador de Animações CSS",
-    "details": "Gerador de animações CSS prontas, criado com IA, para agilizar o trabalho de outros desenvolvedores.",
-    "image": "./assets/img/imagem-projetos/Ia-css-generate.webp",
-    "category": "ferramenta web",
-    "links": {
-      "live": "https://ia-css-generator.vercel.app/",
-      "github": "https://github.com/Jore-X/IA-Css-Generator"
-    },
-    "technologies": [
-      {
-        "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
-      },
-      {
-        "name": "Groq API",
-        "colors": [
-          { "background": "rgba(244, 62, 1, 0.1)" },
-          { "color": "#F43E01" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       }
     ]
   },
@@ -115,24 +63,76 @@
     "technologies": [
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       },
       {
         "name": "Supabase",
-        "colors": [
-          { "background": "rgba(0, 197, 115, 0.2)" },
-          { "color": "#00c573" }
-        ]
+        "colors": {
+          "background": "rgba(0, 197, 115, 0.2)",
+          "color": "#00c573"
+        }
       },
       {
         "name": "Cloudflare",
-        "colors": [
-          { "background": "rgba(243, 127, 32, 0.2)" },
-          { "color": "#F38020" }
-        ]
+        "colors": {
+          "background": "rgba(243, 127, 32, 0.2)",
+          "color": "#F38020"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Páginas Simples",
+    "details": "Ferramenta que gera páginas simples a partir de um prompt, usando Inteligência Artificial.",
+    "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
+    "category": "ferramenta web",
+    "links": {
+      "live": "https://gerador-de-sites-com-ia.vercel.app/",
+      "github": "https://github.com/Jore-X/Gerador-de-Sites-com-IA"
+    },
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
+      },
+      {
+        "name": "Groq API",
+        "colors": {
+          "background": "rgba(244, 62, 1, 0.1)",
+          "color": "#F43E01"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Gerador de Animações CSS",
+    "details": "Gerador de animações CSS prontas, criado com IA, para agilizar o trabalho de outros desenvolvedores.",
+    "image": "./assets/img/imagem-projetos/Ia-css-generate.webp",
+    "category": "ferramenta web",
+    "links": {
+      "live": "https://ia-css-generator.vercel.app/",
+      "github": "https://github.com/Jore-X/IA-Css-Generator"
+    },
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
+      },
+      {
+        "name": "Groq API",
+        "colors": {
+          "background": "rgba(244, 62, 1, 0.1)",
+          "color": "#F43E01"
+        }
       }
     ]
   },
@@ -148,17 +148,17 @@
     "technologies": [
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       },
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       }
     ]
   },
@@ -174,17 +174,17 @@
     "technologies": [
       {
         "name": "HTML",
-        "colors": [
-          { "background": "rgba(227, 76, 38, 0.2)" },
-          { "color": "#E34C26" }
-        ]
+        "colors": {
+          "background": "rgba(227, 76, 38, 0.2)",
+          "color": "#E34C26"
+        }
       },
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       }
     ]
   },
@@ -200,23 +200,23 @@
     "technologies": [
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       },
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       }
     ]
   },
   {
     "title": "Wiki Hollow Knight ",
-    "details": "Site de referência com a narrativa e os equipamentos de um jogo, organizado de forma clara e navegável.",
+    "details": "Site de referência com a narrativa e os equipamentos de um jogo, organized de forma clara e navegável.",
     "image": "./assets/img/imagem-projetos/wiki-hollow-img.webp",
     "category": "wiki",
     "links": {
@@ -226,17 +226,17 @@
     "technologies": [
       {
         "name": "CSS",
-        "colors": [
-          { "background": "rgba(21, 115, 182, 0.2)" },
-          { "color": "#63bdfd" }
-        ]
+        "colors": {
+          "background": "rgba(21, 115, 182, 0.2)",
+          "color": "#63bdfd"
+        }
       },
       {
         "name": "JS",
-        "colors": [
-          { "background": "rgba(247, 222, 30, 0.2)" },
-          { "color": "#f7df1e" }
-        ]
+        "colors": {
+          "background": "rgba(247, 222, 30, 0.2)",
+          "color": "#f7df1e"
+        }
       }
     ]
   }

@@ -48,9 +48,9 @@ async function dynamic_cards(data) {
 
       // Usa os dados do JSON para definir as propriedades do elemento
       new_technologie.textContent = element?.name;
-      new_technologie.style.backgroundColor = element?.colors[0]?.background;
-      new_technologie.style.color = element?.colors[1]?.color;
-      new_technologie.style.borderColor = element?.colors[1]?.color;
+      new_technologie.style.backgroundColor = element?.colors?.background;
+      new_technologie.style.color = element?.colors?.color;
+      new_technologie.style.borderColor = element?.colors?.color;
       // _______________________________________________________________
 
       technologies_box.appendChild(new_technologie);

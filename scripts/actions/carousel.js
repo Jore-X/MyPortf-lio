@@ -1,5 +1,94 @@
 // ________________________________________________________
 // Carrosel Script
+// _______________________________________________________________________________
+// CARREGAR JSON E GERAR CARDS DINAMICAMENTE
+import { load_projects } from "../pages/projects.js";
+
+const data = await load_projects();
+
+const load_carousel = (carousel, container, group) => {
+
+    // pega o template escrito no HTML
+  const template_card = document.getElementById("card_carrousel_template");
+//   cria um fragmento temporario na memoria
+  const fragment = document.createDocumentFragment();
+
+  
+  carousel.forEach((card) => {
+    // clona o template
+    const clone = template_card.content.cloneNode(true);
+
+    // adiciona a classe ao elemento pai
+    clone.querySelector(".projects-divs").classList.add(group);
+
+    // aponta o caminho da imagem pelo json
+    const img = clone.querySelector(".imgCards");
+    img.src = card?.image;
+
+    // pega o titulo do projeto no json
+    const title = clone.querySelector(".caption-cards-title");
+    title.textContent = card?.title;
+
+    const technologies_box = clone.querySelector(".caption-languages-div");
+
+    card?.technologies.forEach((technologie) => {
+        // cria o span que mostra cada tecnologia usada
+      const newtechnologie = document.createElement("span");
+
+      newtechnologie.textContent = technologie?.name;
+      newtechnologie.style.color = technologie?.colors?.color;
+      newtechnologie.style.borderColor = technologie?.colors?.color;
+      newtechnologie.style.background = technologie?.colors?.background;
+
+      technologies_box.appendChild(newtechnologie);
+    });
+
+    const details = clone.querySelector(".info-cards");
+    details.textContent = card?.details;
+
+    // adiciona o link do site ao vivo
+    const link_live = clone.querySelector(".links-live");
+    link_live.href = card?.links?.live;
+
+    // adiciona o link do repositorio do site
+    const link_github = clone.querySelector(".links-repository");
+    link_github.href = card?.links?.github;
+
+    fragment.appendChild(clone);
+  });
+  container.appendChild(fragment);
+};
+// Filtrando apenas os que são referentes
+const carousel_primary = data.filter(
+  (element) =>
+    element?.category == "landing page" ||
+    element?.category == "site comercial",
+);
+const carousel_secundary = data.filter(
+  (element) => element?.category == "ferramenta web",
+);
+const carousels_data = [
+  {
+    carousel: carousel_primary,
+    container: ".carousels-box.cL > .carousel",
+    group: "carousel-LPs",
+  },
+  {
+    carousel: carousel_secundary,
+    container: ".carousels-box.cR > .carousel",
+    group: "carousel-IAs",
+  },
+];
+
+for (let i = 0; i < carousels_data.length; i++) {
+  load_carousel(
+    carousels_data[i].carousel,
+    document.querySelector(carousels_data[i].container),
+    carousels_data[i].group,
+  );
+}
+// _______________________________________
+
 // _____________________
 // FUNÇÃO PARA REMOVER AS CLASSES DOS CARDS
 const remove_all_classes = (elements_list) => {
@@ -91,9 +180,3 @@ for (let i = 0; i < carousels_list.length; i++) {
   btn_next_function(carousel_itens, btn_back, btn_next);
   // ______________________
 }
-// _______________________________________________________________________________
-// CARREGAR JSON E GERAR CARDS DINAMICAMENTE
-import { load_projects } from "../pages/projects.js";
-
-console.log(await load_projects());
-// _______________________________________
