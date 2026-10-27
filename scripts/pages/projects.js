@@ -1,28 +1,10 @@
 // _______________________________________________________________________________
 // IMPORTS
-import "./scripts/component-scripts/header.js";
+import "../component-scripts/header.js";
 // _______________________________________________________________________________
 
-document.addEventListener("headerLoaded", () => {
-  const nav_links = document.querySelectorAll(".navLinks, .nav-aside-links");
-
-  // Esconder links de navegação na pagina de projetos
-  nav_links.forEach((element) => {
-    element.style.display = "none";
-  });
-  //_________________________________________
-
-  // Modificar o botão e sua referencia
-  document.querySelector(".cta-header-btn > span").textContent = "Voltar";
-  const cta_header_btn = document.querySelector(".cta-header-btn");
-
-  // troca o Link href do botão
-  cta_header_btn.href = "./index.html";
-});
-
 // _______________________________________________________________________________
-// IMPLEMENTAÇÃO DINÂMICA DOS PROJETOS
-
+// FUNÇÃO QUE CARREGA O JSON
 export async function load_projects() {
   try {
     const response = await fetch("./projects.json");
@@ -37,6 +19,8 @@ export async function load_projects() {
   }
 }
 
+// _______________________________________________________________________________
+// IMPLEMENTAÇÃO DINÂMICA DOS PROJETOS
 async function dynamic_cards(data) {
   if (!data) {
     return;
@@ -118,7 +102,29 @@ async function dynamic_cards(data) {
   container.appendChild(fragment);
 }
 
+// Só executa se esse elemento existir na página.
+// adicionei isso pois ao importar a função de carregar o JSON no script principal
+// ele executa o js inteiro contido aqui, gerando um erro de elemento null
 if (document.querySelector(".projects-page")) {
+  // Só executa quando o event headerLoaded for lançado
+  document.addEventListener("headerLoaded", () => {
+    const nav_links = document.querySelectorAll(".navLinks, .nav-aside-links");
+
+    // Esconder links de navegação na pagina de projetos
+    nav_links.forEach((element) => {
+      element.style.display = "none";
+    });
+    //_________________________________________
+
+    // Modificar o botão e sua referencia
+    document.querySelector(".cta-header-btn > span").textContent = "Voltar";
+    const cta_header_btn = document.querySelector(".cta-header-btn");
+
+    // troca o Link href do botão
+    cta_header_btn.href = "./index.html";
+  });
+
+  // Para usar função async diretamente sem precisar criar uma função nova
   (async () => {
     dynamic_cards(await load_projects());
   })();
