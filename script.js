@@ -4,7 +4,6 @@ import "./scripts/component-scripts/header.js";
 import "./scripts/actions/carousel.js";
 import "./scripts/actions/toggleNav.js";
 import "./scripts/actions/form_contact.js";
-import "./scripts/animations/reveal.js";
 import "./scripts/animations/gsap.js";
 
 // _______________________________________________________________________________
