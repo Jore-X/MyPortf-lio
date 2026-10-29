@@ -85,6 +85,39 @@
     ]
   },
   {
+    "title": "API de Usuários",
+    "details": "API REST para gerenciamento de usuários, com operações CRUD, validação de dados e controle de acesso.",
+    "image": "./assets/img/imagem-projetos/api-de-usuarios.webp",
+    "category": "api",
+    "links": {
+      "live": "https://api-usuarios-sihq.onrender.com/",
+      "github": "https://github.com/Jore-X/api-usuarios"
+    },
+    "technologies": [
+      {
+        "name": "Node.js",
+        "colors": {
+          "background": "rgba(51, 153, 51, 0.2)",
+          "color": "#339933"
+        }
+      },
+      {
+        "name": "Express",
+        "colors": {
+          "background": "rgba(0, 0, 0, 0.2)",
+          "color": "rgba(228, 228, 231, 0.9)"
+        }
+      },
+      {
+        "name": "Supabase",
+        "colors": {
+          "background": "rgba(0, 197, 115, 0.2)",
+          "color": "#00c573"
+        }
+      }
+    ]
+  },
+  {
     "title": "Gerador de Páginas Simples",
     "details": "Ferramenta que gera páginas simples a partir de um prompt, usando Inteligência Artificial.",
     "image": "./assets/img/imagem-projetos/gerador-de-sites.webp",
